@@ -53,6 +53,10 @@ footer{
   font-size: 18px;
 }
 
+.fa-phone, .fa-envelope{
+  font-size: 20px;
+}
+
 .fa-facebook-f, .fa-instagram{
   font-size: 35px;
   color: $white;
@@ -92,6 +96,9 @@ footer{
     margin-left: 35px;
   }
   .footer__contact{
+    text-align: center;
+  }
+  .companys__footer {
     text-align: center;
   }
 }

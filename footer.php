@@ -12,8 +12,8 @@
       <div class="col-12 col-6 col-md-4 mobile__center">
         <img class="footer__logo mt-1 mb-3" src="<?php echo get_template_directory_uri() . '/assets/images/dawnlogo.png'; ?> "/>
            <ul class="footer__contact">
-              <li class="mb-1">07980413955</li>
-              <li class="mb-1">dawn@drivingtuition.co.uk</li>
+              <li class="mb-1"><i class="mr-1 fa-solid fa-phone"></i></i>07980413955</li>
+              <li class="mb-1"><i class="mr-1 fa-solid fa-envelope"></i>dawn@drivingtuition.co.uk</li>
               <div class="mt-2 mb-2"><i class="fa-brands fa-facebook-f"><i class="fa-brands fa-instagram"></i></i></div>
               <li>Terms & Conditions</li>
             </ul>
