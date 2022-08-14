@@ -48,7 +48,7 @@ footer{
   margin-left: 35px;
 }
 
-.footer__contact, .footer__blog__links{
+.footer__contact, .footer__blog__links, .footer__blog__links__blogs{
   list-style: none;
   font-size: 18px;
 }
@@ -74,4 +74,24 @@ footer{
       color: $white;
       padding-top:15px;
       border: solid 1px $white;
+}
+
+@media (max-width: 960px){
+  .footer__blog__links__blogs,.footer__blog__links,  .lower__footer__logo,.lower__footer__logo{
+    display: none !important;
+  }
+  .companys__footer {
+    padding: 10px;
+  }
+  .mobile__center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo{
+    margin-left: 35px;
+  }
+  .footer__contact{
+    text-align: center;
+  }
 }

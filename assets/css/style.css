@@ -142,7 +142,7 @@ footer .sign__up__input {
   margin-left: 35px;
 }
 
-.footer__contact, .footer__blog__links {
+.footer__contact, .footer__blog__links, .footer__blog__links__blogs {
   list-style: none;
   font-size: 18px;
 }
@@ -172,5 +172,32 @@ footer .sign__up__input {
   color: #fff;
   padding-top: 15px;
   border: solid 1px #fff;
+}
+
+@media (max-width: 960px) {
+  .footer__blog__links__blogs, .footer__blog__links, .lower__footer__logo, .lower__footer__logo {
+    display: none !important;
+  }
+  .companys__footer {
+    padding: 10px;
+  }
+  .mobile__center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__logo {
+    margin-left: 35px;
+  }
+  .footer__contact {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
