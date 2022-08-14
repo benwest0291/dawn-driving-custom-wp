@@ -3,10 +3,10 @@ body {
 }
 
 .blog__card {
-  background-color: #000;
+  background-color: #2E2E30;
   width: 350px;
   height: 510px;
-  border: solid 3px #b30000;
+  border: solid 3px #c90808;
   border-radius: 5px;
   -webkit-box-shadow: 1px 4px 9px -1px #000000;
   box-shadow: 1px 4px 9px -1px #000000;
@@ -30,9 +30,9 @@ body {
 .testimonial__card {
   border: solid 5px red;
   width: 350px;
-  background-color: #000;
+  background-color: #2E2E30;
   margin-bottom: 20px;
-  border: solid 3px #b30000;
+  border: solid 3px #c90808;
   border-radius: 5px;
   -webkit-box-shadow: 1px 4px 9px -1px #000000;
   box-shadow: 1px 4px 9px -1px #000000;
@@ -59,7 +59,7 @@ body {
   background-size: cover;
   background-position: center;
   padding: 510px 0;
-  border-bottom: solid 3px #b30000;
+  border-bottom: solid 3px #c90808;
 }
 
 .banner h1 {
@@ -78,20 +78,20 @@ body {
 }
 
 .masthead__button {
-  background-color: #000;
+  background-color: #2E2E30;
   border-radius: 5px;
   padding: 10px;
   width: 150px;
   margin-right: 20px;
   color: #fff;
-  border: solid 2px #b30000;
+  border: solid 2px #c90808;
   text-align: center;
   text-decoration: none;
 }
 
 .masthead__button:hover {
-  background-color: #b30000;
-  border: solid 2px #000;
+  background-color: #c90808;
+  border: solid 2px #2E2E30;
   text-decoration: none;
   color: #fff;
 }
@@ -106,8 +106,8 @@ footer .footer__sign__up {
 }
 
 footer .top__footer {
-  border-top: solid #000 2px;
-  background-color: #b30000;
+  border-top: solid #2E2E30 2px;
+  background-color: #c90808;
 }
 
 footer .sign__up__p {
@@ -130,8 +130,8 @@ footer .sign__up__input {
 }
 
 .main__footer {
-  background-color: #b30000;
-  background-color: #000;
+  background-color: #c90808;
+  background-color: #2E2E30;
   width: 100%;
   color: #fff;
   padding: 25px;
@@ -172,7 +172,7 @@ footer .sign__up__input {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: #b30000;
+  background-color: #c90808;
   color: #fff;
   padding-top: 15px;
   border: solid 1px #fff;
