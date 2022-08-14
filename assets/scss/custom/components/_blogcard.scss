@@ -1,0 +1,23 @@
+.blog__card{
+  background-color: $primary-color;;
+  width: 350px;
+  height: 460px;
+  border: solid 3px $secondary-color;
+  border-radius: 5px;
+ -webkit-box-shadow: 1px 4px 9px -1px #000000;
+box-shadow: 1px 4px 9px -1px #000000;
+}
+
+.blog__card-image{
+  width: 339px;
+  object-fit: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+.blog__card-heading, .blog__card-par{
+  color: $white;
+}
+
+.blog__card:hover{
+  box-shadow: 5px 2px 12px 3px $acent-color;
+}

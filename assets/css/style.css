@@ -1,0 +1,132 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.blog__card {
+  background-color: #000;
+  width: 350px;
+  height: 460px;
+  border: solid 3px #D7263D;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 4px 9px -1px #000000;
+  box-shadow: 1px 4px 9px -1px #000000;
+}
+
+.blog__card-image {
+  width: 339px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 10px 10px 0 0;
+}
+
+.blog__card-heading, .blog__card-par {
+  color: #fff;
+}
+
+.blog__card:hover {
+  -webkit-box-shadow: 5px 2px 12px 3px #448FA3;
+          box-shadow: 5px 2px 12px 3px #448FA3;
+}
+
+.testimonial__card {
+  border: solid 5px red;
+  width: 350px;
+  background-color: #000;
+  margin-bottom: 20px;
+  border: solid 3px #D7263D;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 4px 9px -1px #000000;
+  box-shadow: 1px 4px 9px -1px #000000;
+}
+
+.testimonial__card-par {
+  color: #fff;
+}
+
+.testimonial__card-star {
+  width: 25px;
+}
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 270px 0;
+  border-bottom: solid 3px #D7263D;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.masthead__button {
+  background-color: #000;
+  border-radius: 5px;
+  padding: 10px;
+  width: 150px;
+  margin-right: 20px;
+  color: #fff;
+  border: solid 2px #D7263D;
+  text-align: center;
+  text-decoration: none;
+}
+
+.masthead__button:hover {
+  background-color: #D7263D;
+  border: solid 2px #000;
+  text-decoration: none;
+  color: #fff;
+}
+
+.top__footer {
+  width: 100%;
+  background-color: #000;
+  height: 70px;
+  border-bottom: solid 3px #D7263D;
+}
+
+.footer__sign__up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.sign__up__p {
+  color: #fff;
+  font-size: 18px;
+}
+
+.sign__up__input {
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+@media (max-width: 960px) {
+  .top__footer {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

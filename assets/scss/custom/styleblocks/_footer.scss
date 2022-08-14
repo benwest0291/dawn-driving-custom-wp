@@ -1,0 +1,33 @@
+// Notifications footer
+.top__footer{
+  width: 100%;
+  background-color: $primary-color;
+  height: 70px;
+  border-bottom: solid 3px $secondary-color;
+}
+
+
+.footer__sign__up{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.sign__up__p{
+  color:$white;
+  font-size: 18px;
+}
+
+.sign__up__input{
+  width: 400px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+@media (max-width: 960px){
+  .top__footer{
+    display: none !important;
+  }
+}
+
+// main footer

@@ -1,0 +1,23 @@
+.testimonial__card{
+  border: solid 5px red;
+  width: 350px;
+  background-color: $primary-color;
+  margin-bottom: 20px;
+  border: solid 3px $secondary-color;
+  border-radius: 5px;
+ -webkit-box-shadow: 1px 4px 9px -1px #000000;
+  box-shadow: 1px 4px 9px -1px #000000;
+}
+
+.testimonial__card-par{
+color: $white;
+}
+
+.testimonial__card-star{
+  width: 25px;
+}
+
+.stars{
+  display: flex;
+  justify-content: center;
+}
