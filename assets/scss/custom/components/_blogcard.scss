@@ -1,7 +1,7 @@
 .blog__card{
   background-color: $primary-color;;
   width: 350px;
-  height: 460px;
+  height: 510px;
   border: solid 3px $secondary-color;
   border-radius: 5px;
  -webkit-box-shadow: 1px 4px 9px -1px #000000;
@@ -11,7 +11,7 @@ box-shadow: 1px 4px 9px -1px #000000;
 .blog__card-image{
   width: 339px;
   object-fit: contain;
-  border-radius: 10px 10px 0 0;
+
 }
 
 .blog__card-heading, .blog__card-par{

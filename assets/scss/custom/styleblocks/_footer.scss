@@ -1,28 +1,30 @@
 // Notifications footer
+footer{
+      .footer__sign__up{
+      display: flex;
+      justify-content: space-between;
+
+}
+
 .top__footer{
-  width: 100%;
-  background-color: $primary-color;
-  height: 70px;
-  border-bottom: solid 3px $secondary-color;
+  border-top: solid $primary-color 2px;
+  background-color: $secondary-color;
 }
-
-
-.footer__sign__up{
-  display: flex;
-  justify-content: space-evenly;
-}
-
 
 .sign__up__p{
-  color:$white;
-  font-size: 18px;
+        color:$white;
+        font-size: 18px;
+        margin-left: 32px;
 }
 
 .sign__up__input{
-  width: 400px;
-  height: 40px;
-  border-radius: 5px;
+        width: 400px;
+        height: 40px;
+        border-radius: 5px;
+        margin-right: 32px;
+      }
 }
+
 
 @media (max-width: 960px){
   .top__footer{
@@ -31,3 +33,45 @@
 }
 
 // main footer
+
+.main__footer{
+  background-color: $secondary-color;
+  background-color:$primary-color;
+  width: 100%;
+  color: $white;
+  padding: 25px;
+}
+
+
+.footer__logo{
+  width: 300px;
+  margin-left: 35px;
+}
+
+.footer__contact, .footer__blog__links{
+  list-style: none;
+  font-size: 18px;
+}
+
+.fa-facebook-f, .fa-instagram{
+  font-size: 35px;
+  color: $white;
+}
+
+.fa-facebook-f:before, .fa-facebook:before {
+    margin-right: 15px;
+}
+
+.footer__sm__logo{
+  width: 100px;
+  margin-left: 40px !important;
+}
+
+.companys__footer{
+      display: flex;
+      justify-content: space-evenly;
+      background-color: $secondary-color;
+      color: $white;
+      padding-top:15px;
+      border: solid 1px $white;
+}
