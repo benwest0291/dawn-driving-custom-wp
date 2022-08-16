@@ -31,9 +31,12 @@
     </div>
       <div class="col-12 col-6 col-md-4">
           <ul class="footer__blog__links">
-              <li class="mb-1">About</li>
-              <li class="mb-1">Gallery</li>
-              <li class="mb-1">Contact us</li>
+                 <?php
+                            wp_nav_menu(array(
+                                'theme_location' => 'footer-menu',
+                                'menu_class'     => 'footer-nav'
+                            ));
+                        ?>
             </ul>
             <div class="d-flex justify-content-evenly lower__footer__logo">
                <img class="footer__sm__logo mb-3" src="<?php echo get_template_directory_uri() . '/assets/images/Pass-Plus-logo.jpeg'; ?> "/>

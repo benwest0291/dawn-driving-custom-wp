@@ -3,19 +3,15 @@
   border-radius: 5px;
    -webkit-box-shadow: 1px 4px 9px -1px #000000;
   box-shadow: 1px 4px 9px -1px #000000;
-
 }
 
-.card__heading{
-  color: $white;
+.text__img__par{
+   line-height: 1.6;
 }
+
 
 .text__container{
-  width: 500px;
-  background-color: $primary-color;
-  color: $white;
-  padding: 25px;
-    border-radius: 5px;
-   -webkit-box-shadow: 1px 4px 9px -1px #000000;
-  box-shadow: 1px 4px 9px -1px #000000;
+width: 500px;
+margin-left: 25px;
+fontt-size: 20px;
 }

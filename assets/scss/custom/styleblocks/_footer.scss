@@ -5,6 +5,19 @@ footer{
       justify-content: space-between;
 }
 
+.menu-item a{
+  margin: 0;
+}
+
+.footer-nav{
+list-style: none !important;
+padding: 0 !important;
+}
+
+.menu_footer_menu a{
+list-style: none;
+}
+
 .top__footer{
   background-color: $secondary-color;
 }

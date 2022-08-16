@@ -108,13 +108,13 @@ body {
 }
 
 .navbar-nav {
-  margin-top: 45px;
+  margin-top: 30px;
 }
 
 .menu-item a {
-  margin-top: 25px;
+  margin-top: 18px;
   color: #fff !important;
-  margin: 20px;
+  margin: 18px;
   font-size: 18px;
 }
 
@@ -129,6 +129,19 @@ footer .footer__sign__up {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+footer .menu-item a {
+  margin: 0;
+}
+
+footer .footer-nav {
+  list-style: none !important;
+  padding: 0 !important;
+}
+
+footer .menu_footer_menu a {
+  list-style: none;
 }
 
 footer .top__footer {
@@ -238,17 +251,13 @@ footer .sign__up__input {
   box-shadow: 1px 4px 9px -1px #000000;
 }
 
-.card__heading {
-  color: #fff;
+.text__img__par {
+  line-height: 1.6;
 }
 
 .text__container {
   width: 500px;
-  background-color: #2E2E30;
-  color: #fff;
-  padding: 25px;
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 4px 9px -1px #000000;
-  box-shadow: 1px 4px 9px -1px #000000;
+  margin-left: 25px;
+  fontt-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

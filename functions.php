@@ -5,7 +5,8 @@ function dawndriving_setup()
     // Register navigation menus.
     register_nav_menus(
         array(
-            'primary-menu' => esc_html__('Primary Menu', 'dawndriving')
+            'primary-menu' => esc_html__('Primary Menu', 'dawndriving'),
+            'footer-menu' => esc_html__('Footer Menu', 'dawndriving')
         )
     );
 }
