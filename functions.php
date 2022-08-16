@@ -1,29 +1,16 @@
 <?php
-
 // Site setup
-
-function of_setup()
+function dawndriving_setup()
 {
     // Register navigation menus.
     register_nav_menus(
         array(
-            'header' => esc_html__('Header Menu', 'of'),
-            'footer_col_1' => esc_html__('Footer Column 1 Menu', 'of'),
-            'footer_col_2' => esc_html__('Footer Column 2 Menu', 'of'),
-            'footer_col_3' => esc_html__('Footer Column 3 Menu', 'of'),
-            'footer_col_4' => esc_html__('Footer Column 4 Menu', 'of'),
-            'legal_links' => esc_html__('Legal Links', 'of')
+            'primary-menu' => esc_html__('Primary Menu', 'dawndriving')
         )
     );
-
-    add_theme_support('post-thumbnails');
-
-    // Image Crops
-    add_image_size('news', 976, 560, true);
-    add_image_size('bag_download', 400, 560, true);
 }
 
-add_action('after_setup_theme', 'of_setup');
+add_action('after_setup_theme', 'dawndriving_setup');
 
 // Stylesheets and Scripts
 

@@ -1,0 +1,27 @@
+.header, .header-fixedb, .sticky {
+	background-color: $primary-color;
+	-webkit-transition: .3s;
+	transition: .3s;
+	padding: 1px 0;
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	left: 0;
+	top: 0;
+  border-bottom: $secondary-color 2px solid;
+}
+
+.navbar-nav{
+  margin-top: 45px;
+}
+
+.menu-item a{
+  margin-top: 25px;
+  color: $white !important;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.navbar-toggler {
+  border: solid 2px $secondary-color !important;
+}

@@ -2,7 +2,6 @@
   background-color: $primary-color;;
   width: 350px;
   height: 510px;
-  border: solid 3px $secondary-color;
   border-radius: 5px;
  -webkit-box-shadow: 1px 4px 9px -1px #000000;
 box-shadow: 1px 4px 9px -1px #000000;
@@ -19,5 +18,5 @@ box-shadow: 1px 4px 9px -1px #000000;
 }
 
 .blog__card:hover{
-  box-shadow: 5px 2px 12px 3px $acent-color;
+  box-shadow: 5px 2px 5px 3px $secondary-color;
 }

@@ -6,7 +6,6 @@ body {
   background-color: #2E2E30;
   width: 350px;
   height: 510px;
-  border: solid 3px #c90808;
   border-radius: 5px;
   -webkit-box-shadow: 1px 4px 9px -1px #000000;
   box-shadow: 1px 4px 9px -1px #000000;
@@ -23,16 +22,15 @@ body {
 }
 
 .blog__card:hover {
-  -webkit-box-shadow: 5px 2px 12px 3px #448FA3;
-          box-shadow: 5px 2px 12px 3px #448FA3;
+  -webkit-box-shadow: 5px 2px 5px 3px #c90808;
+          box-shadow: 5px 2px 5px 3px #c90808;
 }
 
 .testimonial__card {
-  border: solid 5px red;
+  padding: 5px;
   width: 350px;
   background-color: #2E2E30;
   margin-bottom: 20px;
-  border: solid 3px #c90808;
   border-radius: 5px;
   -webkit-box-shadow: 1px 4px 9px -1px #000000;
   box-shadow: 1px 4px 9px -1px #000000;
@@ -96,6 +94,34 @@ body {
   color: #fff;
 }
 
+.header, .header-fixedb, .sticky {
+  background-color: #2E2E30;
+  -webkit-transition: .3s;
+  transition: .3s;
+  padding: 1px 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-bottom: #c90808 2px solid;
+}
+
+.navbar-nav {
+  margin-top: 45px;
+}
+
+.menu-item a {
+  margin-top: 25px;
+  color: #fff !important;
+  margin: 20px;
+  font-size: 18px;
+}
+
+.navbar-toggler {
+  border: solid 2px #c90808 !important;
+}
+
 footer .footer__sign__up {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,7 +132,6 @@ footer .footer__sign__up {
 }
 
 footer .top__footer {
-  border-top: solid #2E2E30 2px;
   background-color: #c90808;
 }
 
@@ -130,7 +155,6 @@ footer .sign__up__input {
 }
 
 .main__footer {
-  background-color: #c90808;
   background-color: #2E2E30;
   width: 100%;
   color: #fff;
@@ -175,7 +199,6 @@ footer .sign__up__input {
   background-color: #c90808;
   color: #fff;
   padding-top: 15px;
-  border: solid 1px #fff;
 }
 
 @media (max-width: 960px) {
@@ -206,5 +229,26 @@ footer .sign__up__input {
   .companys__footer {
     text-align: center;
   }
+}
+
+.text__img {
+  width: 500px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 4px 9px -1px #000000;
+  box-shadow: 1px 4px 9px -1px #000000;
+}
+
+.card__heading {
+  color: #fff;
+}
+
+.text__container {
+  width: 500px;
+  background-color: #2E2E30;
+  color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 4px 9px -1px #000000;
+  box-shadow: 1px 4px 9px -1px #000000;
 }
 /*# sourceMappingURL=style.css.map */
