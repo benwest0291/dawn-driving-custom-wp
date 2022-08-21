@@ -2,6 +2,8 @@
 // Site setup
 function dawndriving_setup()
 {
+     // add featured image to post types
+    add_theme_support( 'post-thumbnails' );
     // Register navigation menus.
     register_nav_menus(
         array(
@@ -13,11 +15,13 @@ function dawndriving_setup()
 
 add_action('after_setup_theme', 'dawndriving_setup');
 
+
 // Stylesheets and Scripts
 
 function add_theme_scripts()
 {
     global $wp_query;
+
 
     // Styles
     wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css', array(), '1');
@@ -36,4 +40,25 @@ function add_theme_scripts()
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
-?>
+
+// Custom post type
+
+function driving_lession_blog()
+{
+add_post_type_support( 'driving', 'thumbnail' );
+  $args = array(
+                          'labels' => array(
+
+                            'name' => 'Driving lessions',
+                            'singular_name' => 'driving lessions',
+                            ),
+                            'public' => true,
+                            'has_archive' => true,
+                            'menu_icon' => 'dashicons-car',
+                            'supports' => array( 'title', 'editor', 'post-thumbnails' ),
+);
+
+  register_post_type( 'driving', $args);
+}
+
+add_action('init', 'driving_lession_blog');

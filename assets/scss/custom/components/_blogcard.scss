@@ -1,22 +1,33 @@
 .blog__card{
-  background-color: $primary-color;;
+  background-color: $primary-color;
   width: 350px;
-  height: 510px;
+  height: 650px;
   border-radius: 5px;
  -webkit-box-shadow: 1px 4px 9px -1px #000000;
 box-shadow: 1px 4px 9px -1px #000000;
+margin-bottom: 25px;
 }
 
 .blog__card-image{
   width: 339px;
   object-fit: contain;
-
 }
 
-.blog__card-heading, .blog__card-par{
+.blog__card-heading{
+  color: $white !important;
+}
+
+.blog__card p {
   color: $white;
+  padding: 0 20px;
 }
 
-.blog__card:hover{
-  box-shadow: 5px 2px 5px 3px $secondary-color;
+.blog__card a {
+  color: $white;
+  padding: 0 20px;
+}
+
+.blog__cards__wrap{
+  display: flex;
+  flex-wrap: wrap-reverse;
 }

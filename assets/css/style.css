@@ -2,13 +2,18 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.top__spacing {
+  margin-top: 150px;
+}
+
 .blog__card {
   background-color: #2E2E30;
   width: 350px;
-  height: 510px;
+  height: 650px;
   border-radius: 5px;
   -webkit-box-shadow: 1px 4px 9px -1px #000000;
   box-shadow: 1px 4px 9px -1px #000000;
+  margin-bottom: 25px;
 }
 
 .blog__card-image {
@@ -17,13 +22,26 @@ body {
      object-fit: contain;
 }
 
-.blog__card-heading, .blog__card-par {
-  color: #fff;
+.blog__card-heading {
+  color: #fff !important;
 }
 
-.blog__card:hover {
-  -webkit-box-shadow: 5px 2px 5px 3px #c90808;
-          box-shadow: 5px 2px 5px 3px #c90808;
+.blog__card p {
+  color: #fff;
+  padding: 0 20px;
+}
+
+.blog__card a {
+  color: #fff;
+  padding: 0 20px;
+}
+
+.blog__cards__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .testimonial__card {

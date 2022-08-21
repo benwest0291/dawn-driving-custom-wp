@@ -7,4 +7,4 @@ get_header();
 
 
 
-<?php get footer(); ?>
+<?php get_footer(); ?>
