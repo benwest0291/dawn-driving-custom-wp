@@ -1,0 +1,14 @@
+.header__top{
+  height: 35px;
+  margin-top: 18px;
+
+  &__instagram, &__facebook{
+    font-size: $font-size-base;
+    transition: ease-in-out .5s;
+    color: $grey;
+
+    &:hover {
+      color: $red
+    }
+  }
+}

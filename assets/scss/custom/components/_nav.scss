@@ -1,0 +1,27 @@
+.nav{
+  background-color: $primary;
+  height: 110px;
+
+  &__logo {
+    height: 80px;
+    margin-top: 12px;
+  }
+
+  &__list{
+
+    margin-top: 42px;
+    padding-left: 0;
+
+    ul{
+      list-style: none;
+      display: flex;
+      padding: 0;
+      justify-content: space-evenly;
+    }
+
+    .menu-main-menu-container li a{
+      color: $white;
+      font-size: $font-size-base;
+    }
+  }
+}

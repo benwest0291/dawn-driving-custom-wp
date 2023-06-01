@@ -1,0 +1,179 @@
+body {
+    font-size: $font-size-lg;
+    line-height: $line-height-base-lg;
+    background-color: $off-white;
+    font-family: $font-family-base !important;
+  }
+
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: $font-weight-bold;
+  font-family: $font-family-base !important;
+}
+
+p{
+  font-size: 16px;
+}
+
+// Links
+a {
+  font-weight: $font-weight-base;
+  transition: $green .3s ease;
+  text-decoration: none;
+
+  transition: ease-in-out .5s;
+
+  &:hover, &focus{
+      color: $black;
+      text-decoration: none;
+  }
+}
+
+// Colors
+.color-white {
+  color: #ffffff !important;
+}
+
+.color-red {
+  color: $red !important;
+}
+
+.color-grey {
+  color: $grey !important;
+}
+
+.color-black {
+  color: $black !important;
+}
+
+// Weights
+.font-weight-semi-bold {
+  font-weight: $font-weight-semibold;
+}
+
+// Fonts
+.times-bold {
+  //Fonts
+  $base-font-family: $font-family-base; 
+  font-weight: normal;
+}
+
+// Text Block
+.text-block {
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.text-sm {
+  font-size: $font-size-base; // 18px
+}
+
+.text-lg {
+  font-size: $font-size-lg;
+  line-height: $line-height-base-lg;
+}
+
+.text-xs {
+  font-size: $font-size-xs;
+  line-height: $line-height-base-xs;
+}
+
+.grid-gap{
+  padding: 6px
+}
+
+
+// Grid
+.row.xs-gutters {
+  margin-left: calc($grid-gutter-width-xs / 2);
+  margin-right: calc($grid-gutter-width-xs / 2);
+
+  & > [class*='col'] {
+    padding-left: calc($grid-gutter-width-xs / 2);
+    padding-right: calc($grid-gutter-width-xs / 2);
+  }
+}
+
+.row.xxs-gutters {
+  margin-left: calc($grid-gutter-width-xxs / 2);
+  margin-right: calc($grid-gutter-width-xxs / 2);
+
+  & > [class*='col'] {
+    padding-left: calc($grid-gutter-width-xxs / 2);
+    padding-right: calc($grid-gutter-width-xxs / 2);
+  }
+}
+
+.row.small-gutters {
+  margin-left: calc($grid-gutter-width-small / 2);
+  margin-right: calc($grid-gutter-width-small / 2);
+
+  & > [class*='col'] {
+    padding-left: calc($grid-gutter-width-small / 2);
+    padding-right: calc($grid-gutter-width-small / 2);
+  }
+}
+
+.row.medium-gutters {
+  @include media-breakpoint-up(lg) {
+    margin-left: calc($grid-gutter-width-medium / 2);
+    margin-right: calc($grid-gutter-width-medium / 2);
+  }
+
+  & > [class*='col'] {
+    @include media-breakpoint-up(lg) {
+      padding-left: calc($grid-gutter-width-medium / 2);
+      padding-right: calc($grid-gutter-width-medium / 2);
+    }
+  }
+}
+
+.row.large-gutters {
+  @include media-breakpoint-up(lg) {
+    margin-left: calc($grid-gutter-width-medium / 2);
+    margin-right: calc($grid-gutter-width-medium / 2);
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-left: calc($grid-gutter-width-large / 2);
+    margin-right: calc($grid-gutter-width-large / 2);
+  }
+
+  & > [class*='col'] {
+    @include media-breakpoint-up(lg) {
+      padding-left: calc($grid-gutter-width-medium / 2);
+      padding-right: calc($grid-gutter-width-medium / 2);
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding-left: calc($grid-gutter-width-large / 2);
+      padding-right: calc($grid-gutter-width-large / 2);
+    }
+  }
+}
+
+.row.xl-gutters {
+  @include media-breakpoint-up(lg) {
+    margin-left: calc($grid-gutter-width-medium / 2);
+    margin-right: calc($grid-gutter-width-medium / 2);
+  }
+
+  @include media-breakpoint-up(xl) {
+    margin-left: calc($grid-gutter-width-xl / 2);
+    margin-right: calc($grid-gutter-width-xl / 2);
+  }
+
+  & > [class*='col'] {
+    @include media-breakpoint-up(lg) {
+      padding-left: calc($grid-gutter-width-medium / 2);
+      padding-right: calc($grid-gutter-width-medium / 2);
+    }
+
+    @include media-breakpoint-up(xl) {
+      padding-left: calc($grid-gutter-width-xl / 2);
+      padding-right: calc($grid-gutter-width-xl / 2);
+    }
+  }
+}
+
