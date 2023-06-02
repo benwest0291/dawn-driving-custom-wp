@@ -230,10 +230,13 @@ a:hover, afocus {
   -webkit-box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
   -moz-box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
   box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
+  width: 100%;
 }
 .super__star__card__image {
   width: 100%;
   border-radius: 20% 0 0 0;
+  height: 300px;
+  object-fit: cover;
 }
 .super__star__card__centre {
   background-color: #E52D27;
