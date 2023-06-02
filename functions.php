@@ -71,6 +71,7 @@ function render_masthead($prefix = "", $args = array())
 	unset($data);
 }
 
+
 /**
  *
  * Google Maps

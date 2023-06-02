@@ -1,0 +1,39 @@
+.super__star__card {
+  background-color: $off-white;
+  border-radius: 20% 0 20% 0;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+  -moz-box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+  box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+
+  &__image{
+    width: 100%;
+    border-radius: 20% 0 0 0;
+  }
+
+  &__centre{
+    background-color: $secondary;
+    padding: 10px;
+    position: absolute;
+    border-radius: 0 0 0 30px;
+    right: 0;
+    top: 0;
+    margin-right: 20px;
+    opacity: .9;
+
+    h6{
+      color: $white;
+    }
+  }
+
+  &__link {
+   color: $primary;
+    font-size: 40px;
+    transition: ease-in-out .2s;
+    cursor: pointer;
+
+    &:hover, &:focus{
+      color: $secondary;
+    }
+  }
+}
