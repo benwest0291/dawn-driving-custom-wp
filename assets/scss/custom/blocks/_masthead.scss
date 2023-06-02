@@ -1,0 +1,49 @@
+.masthead{
+
+  background-color: $white;
+  overflow: hidden;
+  height: 690px;
+
+  @include media-breakpoint-up(md) {
+    height: 100%;
+  }
+
+  &__subheading{
+    margin-top: 40px;
+    font-weight: $font-weight-semibold;
+    line-height: $line-height-base;
+
+      @include media-breakpoint-up(md) {
+        margin-top: 100px;
+      }
+    }
+
+  &__heading{
+    font-size: 40px;
+    font-weight: $font-weight-semibold;
+
+    @include media-breakpoint-up(md) {
+      font-size: 40px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 50px;
+    }
+  }
+
+  &__image {
+    height: 550px;
+    width: 106%;
+    object-fit: contain;
+    margin-top: -160px;
+
+    @include media-breakpoint-up(md) {
+      overflow: visible;
+      width: 140%;
+      height: 120%;
+      margin-top: -110px;
+      object-fit: fill;
+    }
+  }
+}
+

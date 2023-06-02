@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=<?php language_attributes(); ?>>
 
 <head>
     <meta charset="<?php bloginfo("charset"); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
-    <title><?php bloginfo();?></title>
+    <title><?php bloginfo(the_title()); ?>"</title>
 </head>
 
 <?php
@@ -21,12 +21,12 @@ $instagram = get_theme_mod('instagram');
         <section class="header__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 pt-1">
                         <div class="d-flex justify-content-start">
                         <h6 class="color-grey">Driving Instructor - <span class="color-red">Maidstone and Sevenoaks</span></h6>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 pt-1">
                         <div class="d-flex justify-content-end">
                             <h6 class="color-grey d-none d-md-block">Contact Dawn on
                                 <span class="color-red">
@@ -68,7 +68,7 @@ $instagram = get_theme_mod('instagram');
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="d-flex justify-content-end">
-                            <button href="/contact" class="main__btn mt-4">Get in touch<img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></button>
+                            <button href="/contact" class="main__btn mt-4 d-none d-md-block">Get in touch<img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></button>
                         </div>
                     </div>
                 </div>

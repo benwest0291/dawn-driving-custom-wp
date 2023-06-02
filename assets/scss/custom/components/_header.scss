@@ -1,6 +1,15 @@
 .header__top{
-  height: 35px;
-  margin-top: 18px;
+  height: 30px;
+  margin: 10px 0;
+
+  h6{
+    font-weight: $font-weight-semibold;
+    font-size: 14px;
+  }
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 14px;
+  }
 
   &__instagram, &__facebook{
     font-size: $font-size-base;

@@ -55,23 +55,21 @@ require_once(get_template_directory() . '/inc/customizer.php');
  * Render Masthead
  *
  */
-//function render_masthead($prefix = "", $args = array())
-//{
-//	$defaults = array(
-//		"masthead_image" => get_field($prefix . "_masthead_image"),
-//		"masthead_heading" => get_field($prefix . "_masthead_heading"),
-//		"masthead_paragraph" => get_field($prefix . "_masthead_paragraph"),
-//		"masthead_button_one" => get_field($prefix . "_masthead_button_one"),
-//		"masthead_button_one_url" => get_field($prefix . "_masthead_button_one_url"),
-//		"masthead_button_two" => get_field($prefix . "_masthead_button_two"),
-//		"masthead_button_two_url" => get_field($prefix . "_masthead_button_one_url")
-//	);
-//
-//	$data = array_merge($defaults, $args);
-//
-//	include(get_template_directory() . "/inc/blocks/masthead.php");
-//	unset($data);
-//}
+function render_masthead($prefix = "", $args = array())
+{
+	$defaults = array(
+        "masthead_subheading" => get_field($prefix . "_masthead_subheading"),
+		"masthead_heading" => get_field($prefix . "_masthead_heading"),
+		"masthead_button" => get_field($prefix . "_masthead_button"),
+		"masthead_button_url" => get_field($prefix . "_masthead_button_url"),
+        "masthead_image" => get_field($prefix . "_masthead_image"),
+	);
+
+	$data = array_merge($defaults, $args);
+
+	include(get_template_directory() . "/inc/blocks/masthead.php");
+	unset($data);
+}
 
 /**
  *
