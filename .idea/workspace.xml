@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_super-star-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_super-star-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/super-stars.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/super-stars.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +103,7 @@
       <workItem from="1685634841384" duration="2070000" />
       <workItem from="1685636941802" duration="6815000" />
       <workItem from="1685651564592" duration="12000" />
-      <workItem from="1685700990006" duration="19004000" />
+      <workItem from="1685700990006" duration="19198000" />
     </task>
     <servers />
   </component>
