@@ -71,6 +71,26 @@ function render_masthead($prefix = "", $args = array())
 	unset($data);
 }
 
+/**
+ *
+ * Render Lower banner
+ *
+ */
+function render_lower_banner($prefix = "", $args = array())
+{
+    $defaults = array(
+        "banner_text" => get_field($prefix . "_banner_text"),
+        "banner_bg" => get_field($prefix . "_banner_bg"),
+        "banner_button_text" => get_field($prefix . "_banner_button_text"),
+        "banner_button_url" => get_field($prefix . "_banner_button_url"),
+    );
+
+    $data = array_merge($defaults, $args);
+
+    include(get_template_directory() . "/inc/blocks/lower-banner.php");
+    unset($data);
+}
+
 
 /**
  *

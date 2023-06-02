@@ -217,6 +217,10 @@ a:hover, afocus {
   font-size: 14px;
   padding: 10px;
   font-weight: 700;
+  transition: ease-in-out 0.5s;
+}
+.main__btn:hover, .main__btn:focus {
+  background-color: #666666;
 }
 
 .super__star__card {
@@ -306,7 +310,25 @@ a:hover, afocus {
 
 .super__stars {
   background-color: #ffffff;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.lower__banner {
+  height: 100%;
+  margin-bottom: 180px;
+  padding-bottom: 70px;
+}
+.lower__banner h2 {
+  margin-top: 40px;
+  line-height: 1.5714285714;
+  font-weight: 700;
+  font-size: 30px;
+}
+@media (min-width: 992px) {
+  .lower__banner h2 {
+    font-size: 50px;
+  }
 }
 
 .about {
@@ -314,7 +336,7 @@ a:hover, afocus {
 }
 @media (min-width: 768px) {
   .about {
-    margin: 100px 0;
+    margin: 50px 0;
   }
 }
 .about__heading {

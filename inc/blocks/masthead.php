@@ -11,7 +11,7 @@ $mastheadImage = $data["masthead_image"]
         <div class="row">
             <div class="col-12 col-md-6">
                 <?php if ($mastheadSubheading != null){ ?>
-                    <h5 class="masthead__subheading color-red"><?php echo $mastheadSubheading; ?></h5>
+                    <h5 class="masthead__subheading color-red mb-2"><?php echo $mastheadSubheading; ?></h5>
                 <?php } ?>
 
                 <?php if ($mastheadHeading != null){ ?>
@@ -19,7 +19,7 @@ $mastheadImage = $data["masthead_image"]
                 <?php } ?>
 
                 <?php if ($mastheadButton != null){ ?>
-                    <button href="/contact" class="main__btn mt-2"><?php echo $mastheadButton; ?><img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></button>
+                    <button href="/contact" class="main__btn mt-2 w-auto"><?php echo $mastheadButton; ?><img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></button>
                 <?php } ?>
             </div>
 

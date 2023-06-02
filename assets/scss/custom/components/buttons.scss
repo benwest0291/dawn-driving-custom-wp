@@ -6,4 +6,9 @@
   font-size: 14px;
   padding: 10px;
   font-weight: $font-weight-semibold;
+  transition: ease-in-out .5s;
+
+  &:hover, &:focus{
+    background-color: $grey;
+  }
 }

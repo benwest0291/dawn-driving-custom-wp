@@ -36,7 +36,12 @@ $aboutButtonUrl = get_field("about_button_url");
     </div>
 </section>
 
-<?php include("inc/blocks/super-stars.php"); ?>
+<?php include("inc/blocks/super-stars.php");
+
+render_lower_banner("lower_banner_home");
+
+?>
+
 
 <?php
 get_footer();
