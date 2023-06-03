@@ -53,7 +53,7 @@ $instagram = get_theme_mod('instagram');
                 <div class="row">
                     <div class="col-12 col-md-3">
 	                    <?php if ($logo != null){ ?>
-                            <a href="/"><img class="nav__logo" src="<?php echo $logo; ?>"></a>
+                            <a href="<?php echo site_url("/") ?>"><img class="nav__logo" src="<?php echo $logo; ?>"></a>
 	                    <?php } ?>
                     </div>
                     <div class="col-12 col-md-6">

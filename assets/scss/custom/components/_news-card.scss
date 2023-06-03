@@ -1,36 +1,40 @@
-.super__star__card {
-  background-color: $off-white;
-  border-radius: 20% 0 20% 0;
-  margin-bottom: 20px;
+.avatar{
+    border-radius: 50%;
+    border: solid 2px $white;
+}
+
+.news__card{
   -webkit-box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
   -moz-box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
   box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+  background-color: $white;
   width: 100%;
+  margin-bottom: 150px;
+  border-radius: 20% 0 20% 0;
 
   &__image{
     width: 100%;
     border-radius: 20% 0 0 0;
-    height: 320px;
-    object-fit: cover;
   }
 
-  &__centre{
-    background-color: $secondary;
-    padding: 10px;
-    position: absolute;
-    border-radius: 0 0 0 30px;
-    right: 0;
-    top: 0;
-    margin-right: 20px;
+  &__info {
+    background-color: $red;
+    padding: 8px 15px;
     opacity: .9;
+    margin-top: -73px;
 
-    h6{
-      color: $white;
+    &__inner{
+      margin-top: 5px;
     }
   }
 
+  &__clock{
+    margin: 15px 8px 0 0;
+    font-size: 16px;
+  }
+
   &__link {
-   color: $primary;
+    color: $primary;
     font-size: 40px;
     transition: ease-in-out .2s;
     cursor: pointer;
@@ -40,3 +44,5 @@
     }
   }
 }
+
+

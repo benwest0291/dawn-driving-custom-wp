@@ -40,6 +40,8 @@ $aboutButtonUrl = get_field("about_button_url");
 
 render_lower_banner("lower_banner_home");
 
+include("inc/blocks/news.php");
+
 ?>
 
 
