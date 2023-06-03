@@ -226,7 +226,7 @@ a:hover, afocus {
 .super__star__card {
   background-color: #FBF8F8;
   border-radius: 20% 0 20% 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   -webkit-box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
   -moz-box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
   box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
@@ -272,7 +272,7 @@ a:hover, afocus {
   box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
   background-color: #ffffff;
   width: 100%;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   border-radius: 20% 0 20% 0;
 }
 .news__card__image {
