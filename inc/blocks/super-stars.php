@@ -4,12 +4,10 @@
             <h2>My <span class="color-red">SuperStars</span></h2>
             <button href="/superstars" class="main__btn w-auto">View More<img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></button>
         </div>
-        <div class="row">
             <div class="mt-5">
-                <div class="container">
-                    <div class="row">
-                        <?php
-                        $superstar = new WP_Query(array(
+                <div class="row">
+                    <?php
+                    $superstar = new WP_Query(array(
                             "posts_per_page" => 3,
                             "post_type" => "superstars",
                             "orderby" => "meta_value_num",
