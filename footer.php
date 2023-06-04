@@ -5,7 +5,6 @@ $email = get_theme_mod('contact_email');
 $telephone = get_theme_mod('contact_telephone');
 ?>
 
-
 <footer class="footer">
     <div class="footer__main">
         <div class="container">

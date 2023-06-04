@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/DVSA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/custom/components/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_super-stars-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_super-stars-block.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/partials/news-card.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/partials/news-card.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,8 @@
       <workItem from="1685792716505" duration="6962000" />
       <workItem from="1685820010294" duration="659000" />
       <workItem from="1685878481667" duration="1421000" />
-      <workItem from="1685879908449" duration="1769000" />
+      <workItem from="1685879908449" duration="3042000" />
+      <workItem from="1685883006294" duration="29000" />
     </task>
     <servers />
   </component>

@@ -9,7 +9,7 @@
     </div>
     <div class="d-flex justify-content-around p-2">
         <h4 class="mt-1"><?php the_title(); ?></h4>
-        <a href="<?php echo the_permalink(); ?>"><i class="fa-solid fa-circle-chevron-right news__card__link mt-md-2"></i></a>
+        <a href="<?php echo the_permalink(); ?>"><i class="fa-solid fa-circle-chevron-right news__card__link"></i></a>
     </div>
 </div>
 
