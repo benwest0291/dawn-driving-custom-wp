@@ -185,6 +185,47 @@ a:hover, afocus {
   color: #E52D27;
 }
 
+.footer {
+  margin-top: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: left;
+  padding: 50px 0;
+}
+.footer__heading {
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .footer__heading {
+    margin-top: 95px;
+  }
+}
+.footer__credential {
+  width: 140px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .footer__credential {
+    margin-bottom: 0;
+  }
+}
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+.footer li {
+  font-size: 1.125rem;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  .footer li {
+    margin-bottom: 10px;
+  }
+}
+.footer a {
+  color: #ffffff;
+}
+
 .nav {
   background-color: #000000;
   height: 100px;
@@ -362,6 +403,8 @@ a:hover, afocus {
   height: 100%;
   margin-bottom: 80px;
   padding-bottom: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .lower__banner h2 {
   margin-top: 40px;

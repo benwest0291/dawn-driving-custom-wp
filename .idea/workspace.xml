@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/images/DVSA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/custom/components/_footer.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_news-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_news-card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_super-star-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_super-star-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +82,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/assets/scss/custom/components" />
       <recent name="$PROJECT_DIR$/assets/scss/custom/blocks" />
       <recent name="$PROJECT_DIR$/inc/blocks" />
       <recent name="$PROJECT_DIR$/assets/images/icons" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -109,7 +114,10 @@
       <workItem from="1685651564592" duration="12000" />
       <workItem from="1685700990006" duration="19384000" />
       <workItem from="1685722442480" duration="17000" />
-      <workItem from="1685792716505" duration="6882000" />
+      <workItem from="1685792716505" duration="6962000" />
+      <workItem from="1685820010294" duration="659000" />
+      <workItem from="1685878481667" duration="1421000" />
+      <workItem from="1685879908449" duration="1769000" />
     </task>
     <servers />
   </component>

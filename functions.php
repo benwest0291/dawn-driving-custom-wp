@@ -33,7 +33,7 @@ function dawn_driving_setup()
 {
 	register_nav_menu("headerMenu", "Header Menu Location");
 	register_nav_menu("footerMenuNews", "Footer Menu News");
-	register_nav_menu("footerMenuBlog", "Footer Menu Blog");
+	register_nav_menu("footerMenuSuperStars", "Footer Menu SuperStars");
 	register_nav_menu("footerNav", "Footer Navigation");
 
 	add_theme_support("title-tag");
