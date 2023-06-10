@@ -67,10 +67,10 @@ $telephone = get_theme_mod('contact_telephone');
     <div class="container">
         <div class="row pt-1">
             <div class="col-12 col-md-6">
-                <p class="text-center color-black">Dawn Driving Tuition © <?php echo date("Y"); ?></p>
+                <p class="text-center color-black mt-1">Dawn Driving Tuition © <?php echo date("Y"); ?></p>
             </div>
             <div class="col-12 col-md-6">
-                <p class="text-center color-black">Site by <a class="color-red" href="https://benwest.dev" target="_blank">Ben West</a></p>
+                <p class="text-center color-black">Website by <a href="https://benwest.dev" target="_blank"><img class="dev-by" src="<?php echo get_template_directory_uri(); ?>/assets/images/pixel-genie.png" /></a></p></p>
             </div>
         </div>
     </div>

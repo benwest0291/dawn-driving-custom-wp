@@ -73,6 +73,10 @@ a:hover, afocus {
   padding: 6px;
 }
 
+.dev-by {
+  height: 40px;
+}
+
 .row.xs-gutters {
   margin-left: 10px;
   margin-right: 10px;
@@ -261,6 +265,7 @@ a:hover, afocus {
 }
 .main__btn:hover, .main__btn:focus {
   background-color: #666666;
+  color: #ffffff;
 }
 
 .facebook__share {
