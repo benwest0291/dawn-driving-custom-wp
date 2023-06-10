@@ -10,11 +10,13 @@
   background-color: $white;
   width: 100%;
   margin-bottom: 50px;
-  border-radius: 20% 0 20% 0;
+  border-radius: $border-radius;
 
   &__image{
     width: 100%;
-    border-radius: 20% 0 0 0;
+    border-radius: $border-radius $border-radius 0 0;
+    height: 300px;
+    object-fit: cover;
   }
 
   &__info {

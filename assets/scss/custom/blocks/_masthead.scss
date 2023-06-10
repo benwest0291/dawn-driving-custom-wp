@@ -36,6 +36,7 @@
     width: 106%;
     object-fit: contain;
     margin-top: -160px;
+    border-radius: 0 0 180&;
 
     @include media-breakpoint-up(md) {
       overflow: visible;

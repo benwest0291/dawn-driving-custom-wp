@@ -25,17 +25,17 @@
 
 
  // Contect form dop in for locations
-
- let contact = document.querySelector(".js-contact");
-
-// // opening quite
- let openQuote = document.querySelector(".js-open-quote");
-
- const openForm = () => {
-        contact.classList.add("form-active");
- };
- 
-openQuote.addEventListener("click", openForm);
+//
+//  let contact = document.querySelector(".js-contact");
+//
+// // // opening quite
+//  let openQuote = document.querySelector(".js-open-quote");
+//
+//  const openForm = () => {
+//         contact.classList.add("form-active");
+//  };
+//
+// openQuote.addEventListener("click", openForm);
 
 
 

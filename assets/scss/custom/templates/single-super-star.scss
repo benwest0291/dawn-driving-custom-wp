@@ -1,0 +1,32 @@
+.super__stars{
+
+    &__main__image{
+      margin: 30px 0;
+      width: 100%;
+      height: 350px;
+      margin-bottom: 50px;
+      -webkit-box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+      -moz-box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+      box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+      border-radius: $border-radius;
+
+      @include media-breakpoint-up(md) {
+        height: 450px;
+        object-fit: cover;
+      }
+    }
+
+  &__recent{
+
+    background-color: $white;
+    border-radius: $border-radius;
+
+    img{
+      width: 120px;
+      height: 120px;
+      object-fit: fill;
+      border-radius: $border-radius 0 0 $border-radius;
+    }
+  }
+}
+
