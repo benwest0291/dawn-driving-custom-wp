@@ -70,7 +70,7 @@ $telephone = get_theme_mod('contact_telephone');
                 <p class="text-center color-black mt-1">Dawn Driving Tuition © <?php echo date("Y"); ?></p>
             </div>
             <div class="col-12 col-md-6">
-                <p class="text-center color-black">Website by <a href="https://benwest.dev" target="_blank"><img class="dev-by" src="<?php echo get_template_directory_uri(); ?>/assets/images/pixel-genie.png" /></a></p></p>
+                <p class="text-center color-black">Website by <a href="https://benwest.dev" target="_blank"><img class="dev-by" src="<?php echo get_template_directory_uri(); ?>/assets/images/pixel-genie.png" alt="website designed and developed by pixel genie - maidstone, kent" /></a></p></p>
             </div>
         </div>
     </div>

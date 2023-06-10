@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/pixel-genie.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,7 +112,7 @@
       <workItem from="1685879908449" duration="3042000" />
       <workItem from="1685883006294" duration="93000" />
       <workItem from="1686394596179" duration="19649000" />
-      <workItem from="1686415348392" duration="1151000" />
+      <workItem from="1686415348392" duration="1274000" />
     </task>
     <servers />
   </component>
