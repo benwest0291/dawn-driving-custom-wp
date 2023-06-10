@@ -10,7 +10,7 @@ $aboutButtonText = get_field("about_button_text");
 $aboutButtonUrl = get_field("about_button_url");
 ?>
 
-<section class="about">
+<section class="about" id="nav-about">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">

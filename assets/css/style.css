@@ -186,7 +186,6 @@ a:hover, afocus {
 }
 
 .footer {
-  margin-top: 40px;
   background-color: #000000;
   color: #ffffff;
   text-align: left;
@@ -265,7 +264,7 @@ a:hover, afocus {
 }
 
 .super__star__card {
-  background-color: #FBF8F8;
+  background-color: #ffffff;
   border-radius: 20% 0 20% 0;
   margin-bottom: 50px;
   -webkit-box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
@@ -332,6 +331,9 @@ a:hover, afocus {
 .news__card__clock {
   margin: 15px 8px 0 0;
   font-size: 16px;
+}
+.news__card__author {
+  margin-top: 15px;
 }
 .news__card__link {
   color: #000000;
@@ -400,7 +402,6 @@ a:hover, afocus {
 
 .lower__banner {
   height: 100%;
-  margin-bottom: 80px;
   padding-bottom: 70px;
   background-repeat: no-repeat;
   background-size: cover;

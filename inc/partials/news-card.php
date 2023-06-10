@@ -1,7 +1,11 @@
 <div class="news__card">
     <img class="news__card__image" src=" <?php echo the_post_thumbnail_url("post"); ?>">
     <div class="news__card__info d-flex justify-content-between">
-        <?php echo get_avatar( get_the_author_meta( 'ID' ), 52 );  ?>
+        <div class="d-flex">
+            <?php echo get_avatar( get_the_author_meta( 'ID' ), 52 );  ?>
+            <p class="ml-1 news__card__author color-white"><?php the_author(); ?></p>
+        </div>
+
         <div class="d-flex news__card__info__inner">
             <i class="fa-solid fa-clock color-white news__card__clock"></i>
             <p class="color-white mt-1 mr-1"><?php echo get_the_date(); ?></p>

@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/template-news.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template-superstars.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_super-stars-block.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_super-stars-block.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_news-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_news-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_super-star-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_super-star-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/super-stars.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/super-stars.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inc/partials/news-card.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/partials/news-card.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,7 +122,8 @@
       <workItem from="1685820010294" duration="659000" />
       <workItem from="1685878481667" duration="1421000" />
       <workItem from="1685879908449" duration="3042000" />
-      <workItem from="1685883006294" duration="29000" />
+      <workItem from="1685883006294" duration="93000" />
+      <workItem from="1686394596179" duration="4816000" />
     </task>
     <servers />
   </component>
