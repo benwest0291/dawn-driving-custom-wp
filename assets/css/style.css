@@ -374,7 +374,8 @@ a:hover, afocus {
 .masthead {
   background-color: #ffffff;
   overflow: hidden;
-  height: 690px;
+  height: 660px;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .masthead {
@@ -409,8 +410,7 @@ a:hover, afocus {
   height: 550px;
   width: 106%;
   object-fit: contain;
-  margin-top: -160px;
-  border-radius: 0 0 180 .masthead__image;
+  margin-top: -180px;
 }
 @media (min-width: 768px) {
   .masthead__image {
@@ -492,12 +492,17 @@ a:hover, afocus {
 
 .single__post__image {
   width: 100%;
-  height: 500px;
+  height: 300px;
   object-fit: cover;
   -webkit-box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
   -moz-box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
   box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
   border-radius: 7px;
+}
+@media (min-width: 768px) {
+  .single__post__image {
+    height: 500px;
+  }
 }
 .single__post__author {
   margin-top: -15px;

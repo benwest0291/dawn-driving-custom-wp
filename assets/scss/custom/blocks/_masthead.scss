@@ -2,7 +2,8 @@
 
   background-color: $white;
   overflow: hidden;
-  height: 690px;
+  height: 660px;
+  margin-bottom: 0;
 
   @include media-breakpoint-up(md) {
     height: 100%;
@@ -35,8 +36,7 @@
     height: 550px;
     width: 106%;
     object-fit: contain;
-    margin-top: -160px;
-    border-radius: 0 0 180&;
+    margin-top: -180px;
 
     @include media-breakpoint-up(md) {
       overflow: visible;
