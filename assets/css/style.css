@@ -499,5 +499,8 @@ a:hover, afocus {
   box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
   border-radius: 7px;
 }
+.single__post__author {
+  margin-top: -15px;
+}
 
 /*# sourceMappingURL=style.css.map */

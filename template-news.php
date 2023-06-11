@@ -14,7 +14,7 @@ render_masthead("news_banner");
                     "posts_per_page" => 35,
                     "post_type" => "post",
                     "orderby" => "meta_value_num",
-                    "order" => "DSC"
+                    "order" => "ASC"
                 ));
                 while ($superstar->have_posts()) {
                     $superstar->the_post();
