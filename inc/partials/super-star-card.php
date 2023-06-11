@@ -10,7 +10,7 @@ $testCentre = get_field("test_centre");
 
         <div class="d-flex justify-content-around p-2">
             <h4 class="mt-1"><?php the_title(); ?></h4>
-            <a class="mt-1" href="<?php echo the_permalink(); ?>"><i class="fa-solid fa-circle-chevron-right super__star__card__link"></i></a>
+            <a class="mt-1" href="<?php the_permalink(); ?>"><i class="fa-solid fa-circle-chevron-right super__star__card__link"></i></a>
         </div>
 </div>
 
