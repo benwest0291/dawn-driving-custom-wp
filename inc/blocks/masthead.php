@@ -15,11 +15,14 @@ $mastheadImage = $data["masthead_image"]
                 <?php } ?>
 
                 <?php if ($mastheadHeading != null){ ?>
-                    <?php echo $mastheadHeading; ?>
+                    <div>
+                        <?php echo $mastheadHeading; ?>
+                    </div>
+
                 <?php } ?>
 
                 <?php if ($mastheadButton != null){ ?>
-                    <a href="/contact" class="main__btn mt-5 w-auto"><?php echo $mastheadButton; ?><img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></a>
+                    <a href="/contact" class="main__btn w-auto"><?php echo $mastheadButton; ?><img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></a>
                 <?php } ?>
             </div>
 

@@ -24,7 +24,7 @@ $faqHeading = get_field("faq_heading");
         $answer = get_sub_field("answer");
     ?>
         <div class="faq__bar js-faq-bar" >
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between js-faq__top">
                 <?php if ($question != null) { ?>
                     <p class="faq__question"><?php echo $question; ?></p>
                 <?php } ?>
@@ -32,7 +32,7 @@ $faqHeading = get_field("faq_heading");
             </div>
 
             <?php if ($answer != null) { ?>
-                <p class="mt-2 faq__answer js-faq__answer"><?php echo $answer; ?></p>
+                <p class="mt-2 pr-2 faq__answer js-faq__answer"><?php echo $answer; ?></p>
             <?php } ?>
         </div>
         <?php
