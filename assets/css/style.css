@@ -508,4 +508,32 @@ a:hover, afocus {
   margin-top: -15px;
 }
 
+.faq__bar {
+  background-color: #ffffff;
+  padding: 20px 0 5px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.faq__chevron {
+  height: 20px;
+  margin: 5px 30px 0 0;
+}
+.faq__question {
+  color: #000000;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.faq__answer {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,41 +1,13 @@
-// Burger navigation
+// FAQ accordion
+const faqBars = document.querySelectorAll('.js-faq-bar');
 
-// let burger = document.querySelector(".js-navigation__burger");
-// let nav = document.querySelector(".js-navigation__mobile");
-//
-// // Open navigation
-// const navOpen = () => {
-//         console.log(nav)
-//         nav.classList.add("nav-active");
-//     }
-//
-// burger.addEventListener("click", navOpen);
+faqBars.forEach(faqBar => {
 
-// Close navigation
-
-// let close = document.querySelector(".js-navigation__mobile__cross");
-//
-// const closeNav = () => {
-//     console.log(nav)
-//     nav.classList.remove("nav-active");
-// }
-//
-// close.addEventListener("click", closeNav);
-
-
-
- // Contect form dop in for locations
-//
-//  let contact = document.querySelector(".js-contact");
-//
-// // // opening quite
-//  let openQuote = document.querySelector(".js-open-quote");
-//
-//  const openForm = () => {
-//         contact.classList.add("form-active");
-//  };
-//
-// openQuote.addEventListener("click", openForm);
-
-
-
+    faqBar.addEventListener('click', () => {
+        faqBar.classList.toggle('active');
+        const answer = faqBar.querySelector('.js-faq__answer');
+        const chevron = faqBar.querySelector('.js-faq__chevron');
+        answer.classList.toggle('active');
+        chevron.classList.toggle('rotate');
+    });
+});

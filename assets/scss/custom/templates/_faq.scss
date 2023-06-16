@@ -1,0 +1,35 @@
+.faq{
+
+  &__bar{
+    background-color: $white;
+    padding: 20px 0 5px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: $border-radius;
+  }
+
+  &__chevron{
+    height: 20px;
+    margin: 5px 30px 0 0;
+  }
+
+  &__question{
+    color: $black;
+    font-size: $font-size-base;
+    font-weight: $font-weight-semibold;
+  }
+
+  &__answer{
+    display: none;
+  }
+}
+
+// js styles
+
+.active{
+  display: block;
+}
+
+.rotate{
+  transform: rotate(90deg);
+}

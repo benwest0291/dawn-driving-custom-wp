@@ -4,28 +4,30 @@ get_header();
 
 render_masthead("faq_banner");
 
-
 ?>
 
 <section class="faq mt-5 mb-5">
     <div class="container">
-        <div class="faq__bar"><?php
-                if (have_rows("faqs")) :
-                    while (have_rows("faqs")) : the_row();
-                         $question = get_sub_field("question");
-                         $answer = get_sub_field("answer");
-                     ?>
-                    <?php if ($question != null) { ?>
-                        <h3><?php echo $question; ?></h3>
-                    <?php } ?>
+    <?php
+        if (have_rows("faqs")) :
+        while (have_rows("faqs")) : the_row();
+        $question = get_sub_field("question");
+        $answer = get_sub_field("answer");
+    ?>
+        <div class="faq__bar js-faq-bar" >
+            <div class="d-flex justify-content-between">
+                <?php if ($question != null) { ?>
+                    <p class="faq__question"><?php echo $question; ?></p>
+                <?php } ?>
+                <img class="faq__chevron js-faq__chevron" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/red-chevron.png" />
+            </div>
 
-                        <?php if ($answer != null) { ?>
-                            <p><?php echo $answer; ?></p>
-                        <?php } ?>
-                    <?php
-                endwhile;
-            endif; ?>
+            <?php if ($answer != null) { ?>
+                <p class="mt-2 faq__answer js-faq__answer"><?php echo $answer; ?></p>
+            <?php } ?>
         </div>
+        <?php
+        endwhile; endif; ?>
     </div>
 </section>
 
