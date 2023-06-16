@@ -1,4 +1,4 @@
-<section class="latest__news__block pt-5">
+<section class="latest__news__block pt-5 pb-3">
     <div class="container">
         <div class="d-flex justify-content-between">
             <h2>My <span class="color-red">Latest News</span></h2>

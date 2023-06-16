@@ -33,9 +33,6 @@ render_masthead("news_banner");
         </div>
     </section>
 
-
-
-
 <?php
 
 render_lower_banner("lower_banner_news");
