@@ -3,11 +3,20 @@
 get_header();
 
 render_masthead("faq_banner");
-
+$intro = get_field("faq_intro");
+$faqHeading = get_field("faq_heading");
 ?>
 
 <section class="faq mt-5 mb-5">
     <div class="container">
+        <?php if ($faqHeading != null) { ?>
+            <h2 class="mb-2"><?php echo $faqHeading; ?></h2>
+        <?php } ?>
+
+        <?php if ($intro != null) { ?>
+            <div class="mb-4"><?php echo $intro; ?></div>
+        <?php } ?>
+
     <?php
         if (have_rows("faqs")) :
         while (have_rows("faqs")) : the_row();
