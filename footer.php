@@ -26,7 +26,7 @@ $telephone = get_theme_mod('contact_telephone');
                             <p class="ml-1"><?php echo $email; ?></p>
                         <?php } ?>
                     </div>
-                    <p><a class="color-white" href="">Terms and Conditions</a></p>
+                    <p><a class="color-white" href="<?php echo site_url("/privacy-policy") ?>">Terms and Conditions</a></p>
                     <img class="footer__credential" src="<?php echo get_template_directory_uri(); ?>/assets/images/DVSA.png" />
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-1">

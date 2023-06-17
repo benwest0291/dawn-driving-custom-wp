@@ -1,0 +1,15 @@
+.error{
+
+  &__banner{
+    background-color: $white;
+    height: 100%;
+
+    &__sm__heading{
+      padding-top: 50px;
+    }
+
+    &__main__heading{
+      font-size: 45px;
+    }
+  }
+}

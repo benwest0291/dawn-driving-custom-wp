@@ -161,8 +161,6 @@ if ($location) : ?>
                 icon: 'http://dawn-driving-tuition-v3.local/wp-content/uploads/2023/06/icon.svg'
             });
 
-
-
             // Append to reference for later use.
             map.markers.push(marker);
 

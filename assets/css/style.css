@@ -667,4 +667,44 @@ a:hover, afocus {
   color: #E52D27;
 }
 
+.policy__banner {
+  height: 200px;
+  background-color: #ffffff;
+}
+@media (min-width: 768px) {
+  .policy__banner {
+    height: 300px;
+  }
+}
+.policy__banner__subheading {
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  .policy__banner {
+    padding-top: 50px;
+  }
+}
+.policy__banner__heading {
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .policy__banner__heading {
+    font-size: 40px;
+  }
+}
+.policy__main__content {
+  margin-bottom: 100px;
+}
+
+.error__banner {
+  background-color: #ffffff;
+  height: 100%;
+}
+.error__banner__sm__heading {
+  padding-top: 50px;
+}
+.error__banner__main__heading {
+  font-size: 45px;
+}
+
 /*# sourceMappingURL=style.css.map */

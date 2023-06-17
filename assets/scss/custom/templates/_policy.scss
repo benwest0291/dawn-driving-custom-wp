@@ -1,0 +1,30 @@
+.policy{
+
+  &__banner{
+    height: 200px;
+    background-color: $white;
+
+    @include media-breakpoint-up(md) {
+      height: 300px;
+    }
+
+    &__subheading{
+      padding-top: 60px;
+    }
+      @include media-breakpoint-up(md) {
+        padding-top: 50px;
+    }
+
+    &__heading{
+      font-size: 30px;
+
+      @include media-breakpoint-up(md) {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__main__content{
+    margin-bottom: 100px;
+  }
+}
