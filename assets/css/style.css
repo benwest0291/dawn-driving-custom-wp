@@ -231,11 +231,11 @@ a:hover, afocus {
 
 .nav {
   background-color: #000000;
-  height: 100px;
+  height: 120px;
   z-index: 100;
 }
 .nav__logo {
-  height: 80px;
+  height: 90px;
   margin-top: 12px;
 }
 .nav__list {
@@ -265,7 +265,7 @@ a:hover, afocus {
 }
 @media (min-width: 768px) {
   .main__btn {
-    padding: 15px 15px;
+    padding: 10px 15px;
     font-size: 18px;
   }
 }
@@ -448,6 +448,7 @@ a:hover, afocus {
 .masthead__heading {
   font-size: 40px;
   font-weight: 700;
+  line-height: 1.3;
 }
 @media (min-width: 768px) {
   .masthead__heading {
@@ -457,7 +458,7 @@ a:hover, afocus {
 }
 @media (min-width: 992px) {
   .masthead__heading {
-    font-size: 55px;
+    font-size: 50px;
   }
 }
 .masthead__image {
@@ -487,21 +488,21 @@ a:hover, afocus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.lower__banner h2 {
+.lower__banner__heading {
   margin-top: 40px;
   line-height: 1.5714285714;
   font-weight: 700;
   font-size: 30px;
 }
 @media (min-width: 992px) {
-  .lower__banner h2 {
-    font-size: 50px;
+  .lower__banner__heading {
+    font-size: 45px;
   }
 }
 
 .acf-map {
   width: 100%;
-  height: 500px;
+  height: 400px;
 }
 
 .acf-map img {
@@ -611,6 +612,27 @@ a:hover, afocus {
 }
 .topbar__active p {
   color: #ffffff !important;
+}
+
+.contact__information {
+  background-color: #ffffff;
+  border-radius: 7px;
+  height: 430px;
+  -webkit-box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
+  -moz-box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
+  box-shadow: 2px 11px 18px -10px rgb(102, 102, 102);
+  background-color: #ffffff;
+}
+.contact__information__subheading {
+  margin-top: 8px;
+}
+.contact__information__facebook, .contact__information__instagram {
+  color: #000000;
+  font-size: 30px;
+  transition: ease-in-out 0.5s;
+}
+.contact__information__facebook:hover, .contact__information__facebook:focus, .contact__information__instagram:hover, .contact__information__instagram:focus {
+  color: #E52D27;
 }
 
 /*# sourceMappingURL=style.css.map */

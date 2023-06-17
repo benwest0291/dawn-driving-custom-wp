@@ -3,6 +3,11 @@
 get_header();
 render_masthead("contact_banner");
 $form = get_field("contact_form");
+$information = get_field("information_text");
+$email = get_theme_mod('contact_email');
+$telephone = get_theme_mod('contact_telephone');
+$facebook = get_theme_mod('facebook');
+$instagram = get_theme_mod('instagram');
 $location = get_field("map_location");
 
 if ($form != null) {
@@ -21,8 +26,39 @@ if ($form != null) {
             </div>
 
             <div class="col-12 col-md-4">
-                <div class="contact__information">
+                <div class="contact__information mt-5">
+                    <div class="p-3">
+                        <h3 class="pb-1">Important Information</h3>
+                        <p><?php echo $information; ?></p>
+                        <div class="d-flex justify-content-between">
+                            <div class="socials">
+                                <h4 class="contact__information__subheading">Socials:</h4>
+                            </div>
+                            <div class="d-flex ">
+                                <?php if ($telephone != null){ ?>
+                                    <a href="<?php echo $facebook; ?>"><i class="fa-brands fa-facebook mr-1 contact__information__facebook "></i></a>
+                                <?php } ?>
 
+                                <?php if ($instagram != null){ ?>
+                                    <a href="<?php echo $instagram; ?>"><i class="fa-brands fa-instagram contact__information__instagram"></i></a>
+                                <?php } ?>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-1">
+                            <h4 class="contact__information__subheading">Tel:</h4>
+                            <?php if ($telephone  != null){ ?>
+                                <p class="mt-1"><?php echo $telephone ?></p>
+                            <?php } ?>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <h4 class="contact__information__subheading">Email:</h4>
+                            <?php if ($email != null){ ?>
+                                <p class="mt-1"><?php echo $email ?></p>
+                            <?php } ?>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

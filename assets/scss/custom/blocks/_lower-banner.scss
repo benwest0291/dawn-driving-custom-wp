@@ -5,14 +5,14 @@
   background-size: cover;
 
 
-  h2{
+  &__heading{
     margin-top: 40px;
     line-height: $line-height-base;
     font-weight: $font-weight-semibold;
     font-size: 30px;
 
     @include media-breakpoint-up(lg) {
-      font-size: 50px;
+      font-size: 45px;
     }
   }
 }

@@ -1,0 +1,26 @@
+.contact{
+
+  &__information{
+    background-color: $white;
+    border-radius: $border-radius;
+    height: 430px;
+    -webkit-box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+    -moz-box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+    box-shadow: 2px 11px 18px -10px rgba(102, 102, 102, 1);
+    background-color: $white;
+
+    &__subheading{
+      margin-top: 8px
+    }
+
+    &__facebook, &__instagram{
+      color: $black;
+      font-size: 30px;
+      transition: ease-in-out .5s;
+
+      &:hover, &:focus{
+        color: $red;
+      }
+    }
+  }
+}

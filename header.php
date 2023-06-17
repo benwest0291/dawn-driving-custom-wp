@@ -68,7 +68,7 @@ $instagram = get_theme_mod('instagram');
                     </div>
                     <div class="col-12 col-md-3">
                         <div class="d-flex justify-content-end">
-                            <button href="/contact" class="header__btn mt-3 d-none d-md-block">Bookings<img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></button>
+                            <button href="/contact" class="header__btn mt-4 d-none d-md-block">Bookings<img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></button>
                         </div>
                     </div>
                 </div>
