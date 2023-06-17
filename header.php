@@ -75,5 +75,5 @@ $instagram = get_theme_mod('instagram');
             </div>
         </nav>
     </header>
-    <?php include('inc/partials/social-side.php'); ?>
 <main id="main">
+<?php include('inc/partials/social-side.php'); ?>
