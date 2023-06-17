@@ -8,13 +8,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_map.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_map.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_masthead.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_masthead.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_nav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/custom/templates/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/templates/_contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-contact.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +123,7 @@
       <workItem from="1686483151917" duration="5645000" />
       <workItem from="1686492669907" duration="3174000" />
       <workItem from="1686930043526" duration="11014000" />
-      <workItem from="1686998152102" duration="9536000" />
+      <workItem from="1686998152102" duration="15691000" />
     </task>
     <servers />
   </component>

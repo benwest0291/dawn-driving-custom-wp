@@ -12,7 +12,7 @@ $telephone = get_theme_mod('contact_telephone');
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3">
                     <?php if ($logo != null) { ?>
-                        <img class="footer__logo" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></img>
+                        <img class="footer__logo mb-2" src="<?php echo $logo; ?>" alt="<?php echo get_bloginfo("name"); ?>"></img>
                     <?php } ?>
                     <div class="d-flex mt-1">
                         <?php if ($telephone != null) { ?>
@@ -30,7 +30,7 @@ $telephone = get_theme_mod('contact_telephone');
                     <img class="footer__credential" src="<?php echo get_template_directory_uri(); ?>/assets/images/DVSA.png" />
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-1">
-                    <h3 class="footer__heading color-white">Latest <span class="color-red">News</span></h3>
+                    <h3 class="footer__heading color-white mb-3">Latest <span class="color-red">News</span></h3>
                     <ul>
                         <?php
                         wp_nav_menu(array(
@@ -40,7 +40,7 @@ $telephone = get_theme_mod('contact_telephone');
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-1">
-                    <h3 class="footer__heading color-white">Super<span class="color-red">Stars</span></h3>
+                    <h3 class="footer__heading color-white mb-3">Super<span class="color-red">Stars</span></h3>
                     <ul>
                         <?php
                         wp_nav_menu(array(
@@ -50,7 +50,7 @@ $telephone = get_theme_mod('contact_telephone');
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3 mb-1">
-                    <h3 class="footer__heading color-white">Navigation <span class="color-red">Links</span> </h3>
+                    <h3 class="footer__heading color-white mb-3">Navigation <span class="color-red">Links</span> </h3>
                     <ul>
                         <?php
                         wp_nav_menu(array(

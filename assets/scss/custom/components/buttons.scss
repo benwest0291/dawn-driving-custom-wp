@@ -3,14 +3,14 @@
   color: $white;
   border-style: none;
   border-radius: $border-radius;
-  font-size: 14px;
+  font-size: 15px;
   padding: 15px;
   font-weight: $font-weight-semibold;
   transition: ease-in-out .5s;
+  letter-spacing: .4px;
 
   @include media-breakpoint-up(md) {
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 10px 25px;
   }
 
   &:hover, &:focus{

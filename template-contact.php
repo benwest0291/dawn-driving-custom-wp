@@ -3,6 +3,8 @@
 get_header();
 render_masthead("contact_banner");
 $form = get_field("contact_form");
+$heading = get_field("contact_form_heading");
+$paragraph = get_field("contact_form_paragraph");
 $information = get_field("information_text");
 $email = get_theme_mod('contact_email');
 $telephone = get_theme_mod('contact_telephone');
@@ -19,16 +21,24 @@ if ($form != null) {
     <div class="container">
         <div class="row">
 
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-6 col-lg-8">
+                <?php if($heading != null) { ?>
+                    <h2 class="mt-5"><?php echo $heading; ?></h2>
+                <?php } ?>
+
+                <?php if($paragraph != null) { ?>
+                     <p class="mt-2"><?php echo $paragraph; ?></p>
+                <?php } ?>
+
                 <?php if ($formShortcode != null) {
                     echo do_shortcode($formShortcode);
                 } ?>
             </div>
 
-            <div class="col-12 col-md-4">
-                <div class="contact__information mt-5">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="contact__information mt-5 mb-5">
+                    <h3 class="contact__information__heading text-center">Information</h3>
                     <div class="p-3">
-                        <h3 class="pb-1">Important Information</h3>
                         <p><?php echo $information; ?></p>
                         <div class="d-flex justify-content-between">
                             <div class="socials">
