@@ -259,11 +259,32 @@ a:hover, afocus {
   border-style: none;
   border-radius: 7px;
   font-size: 14px;
-  padding: 10px;
+  padding: 15px;
   font-weight: 700;
   transition: ease-in-out 0.5s;
 }
+@media (min-width: 768px) {
+  .main__btn {
+    padding: 15px 15px;
+    font-size: 18px;
+  }
+}
 .main__btn:hover, .main__btn:focus {
+  background-color: #666666;
+  color: #ffffff;
+}
+
+.header__btn {
+  background-color: #E52D27;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 10px 17px;
+  font-weight: 700;
+  transition: ease-in-out 0.5s;
+}
+.header__btn:hover, .header__btn:focus {
   background-color: #666666;
   color: #ffffff;
 }
@@ -371,6 +392,37 @@ a:hover, afocus {
   color: #E52D27;
 }
 
+.social__side {
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  border-radius: 7px 0 0 7px;
+  margin-left: -4px;
+  margin-top: 515px;
+  position: fixed;
+  z-index: 100;
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .social__side {
+    margin-top: 450px;
+  }
+}
+.social__side__insta, .social__side__facebook {
+  color: #ffffff;
+  transition: 0.5s ease-in;
+}
+.social__side__insta :hover,
+.social__side__insta :focus, .social__side__facebook :hover,
+.social__side__facebook :focus {
+  color: #E52D27;
+  cursor: pointer;
+  transition: 0.5s ease-in;
+}
+
 .masthead {
   background-color: #ffffff;
   overflow: hidden;
@@ -386,6 +438,7 @@ a:hover, afocus {
   margin-top: 40px;
   font-weight: 700;
   line-height: 1.5714285714;
+  font-size: 20px;
 }
 @media (min-width: 768px) {
   .masthead__subheading {
@@ -404,7 +457,7 @@ a:hover, afocus {
 }
 @media (min-width: 992px) {
   .masthead__heading {
-    font-size: 50px;
+    font-size: 55px;
   }
 }
 .masthead__image {
@@ -535,9 +588,11 @@ a:hover, afocus {
 
 .active {
   display: block;
+  animation: slide-up 1000ms forwards, fade-in 500ms forwards;
 }
 
 .rotate {
+  transition: ease-out 0.2s;
   transform: rotate(90deg);
 }
 

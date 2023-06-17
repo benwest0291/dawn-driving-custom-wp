@@ -4,6 +4,7 @@ $logo = get_theme_mod('company_logo');
 $email = get_theme_mod('contact_email');
 $telephone = get_theme_mod('contact_telephone');
 ?>
+</main>
 
 <footer class="footer">
     <div class="footer__main">

@@ -1,0 +1,30 @@
+.social__side{
+  background-color: $black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  border-radius: $border-radius 0 0 $border-radius ;
+  margin-left: -4px;
+  margin-top: 515px;
+  position: fixed;
+  z-index: 100;
+  font-size: 30px;
+
+  @include media-breakpoint-up(md) {
+    margin-top: 450px;
+  }
+
+  &__insta, &__facebook{
+    color: $white;
+    transition: 0.5s ease-in;
+
+    :hover,
+    :focus {
+      color: $red;
+      cursor: pointer;
+      transition: 0.5s ease-in;
+    }
+  }
+}

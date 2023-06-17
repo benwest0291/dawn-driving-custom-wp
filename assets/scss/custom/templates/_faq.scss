@@ -32,9 +32,11 @@
 
 .active{
   display: block;
+  animation: slide-up 1000ms forwards, fade-in 500ms forwards;
 }
 
 .rotate{
+  transition: ease-out .2s;
   transform: rotate(90deg);
 }
 
