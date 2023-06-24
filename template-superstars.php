@@ -26,9 +26,6 @@ render_masthead("banner_superstars");
             ?>
         </div>
     </div>
-    <div class="d-flex justify-content-center">
-        <button class="main__btn m-2">Load more SuperStars</button>
-    </div>
 </section>
 
 <?php

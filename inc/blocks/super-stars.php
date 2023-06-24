@@ -2,7 +2,7 @@
     <div class="container">
         <div class="d-flex justify-content-between">
             <h2>My <span class="color-red">SuperStars</span></h2>
-            <a href="/superstars" class="main__btn w-auto">View More<img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></a>
+            <a href="/superstars" class="main__btn w-auto d-none d-md-block">View More<img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></a>
         </div>
             <div class="mt-5">
                 <div class="row">

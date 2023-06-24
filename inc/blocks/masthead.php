@@ -11,11 +11,11 @@ $mastheadImage = $data["masthead_image"]
         <div class="row">
             <div class="col-12 col-md-6">
                 <?php if ($mastheadSubheading != null){ ?>
-                    <h5 class="masthead__subheading color-red mb-2"><?php echo $mastheadSubheading; ?></h5>
+                    <h5 class="masthead__subheading color-red mb-1"><?php echo $mastheadSubheading; ?></h5>
                 <?php } ?>
 
                 <?php if ($mastheadHeading != null){ ?>
-                    <div>
+                    <div class="mb-2">
                         <?php echo $mastheadHeading; ?>
                     </div>
 

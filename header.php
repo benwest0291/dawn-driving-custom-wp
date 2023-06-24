@@ -50,26 +50,30 @@ $instagram = get_theme_mod('instagram');
 
         <nav class="nav">
             <div class="container">
+                <div class="navigation__burger">
+                    <div class="line__one"></div>
+                    <div class="line__two"></div>
+                    <div class="line__three"></div>
+                </div>
                 <div class="row">
-                    <div class="col-12 col-md-3">
-	                    <?php if ($logo != null){ ?>
-                            <a href="<?php echo site_url("/") ?>"><img class="nav__logo" src="<?php echo $logo; ?>"></a>
-	                    <?php } ?>
-                    </div>
                     <div class="col-12 col-md-6">
-                        <ul class="nav__list">
-		                    <?php
-		                    wp_nav_menu(array(
-			                    "theme_location" => "headerMenu",
-			                    "menu__class" => "nav__links"
-		                    ));
-		                    ?>
-                        </ul>
+                        <?php if ($logo != null){ ?>
+                            <a href="<?php echo site_url("/") ?>"><img class="nav__logo" src="<?php echo $logo; ?>"></a>
+                        <?php } ?>
                     </div>
-                    <div class="col-12 col-md-3">
-                        <div class="d-flex justify-content-end">
-                            <button href="/contact" class="header__btn mt-4 d-none d-md-block">Bookings<img class="ml-1" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/cevron.png" /></button>
+
+                    <div class="col-12 col-md-6 ">
+                        <div class="p-0 navigation__dropdown js-navigation__layer">
+                            <ul class="navigation__list">
+                                <?php
+                                wp_nav_menu(array(
+                                    "theme_location" => "headerMenu",
+                                    "menu__class" => "nav__links"
+                                ));
+                                ?>
+                            </ul>
                         </div>
+
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ body {
   line-height: 1.625;
   background-color: #FBF8F8;
   font-family: "Inter", sans-serif !important;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -308,6 +309,21 @@ a:hover, afocus {
   padding: 8px 12px;
 }
 
+.nav__btn {
+  background-color: #000000;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 10px 17px;
+  font-weight: 700;
+  transition: ease-in-out 0.5s;
+}
+.nav__btn:hover, .nav__btn:focus {
+  background-color: #E52D27;
+  color: #ffffff;
+}
+
 .super__star__card {
   background-color: #ffffff;
   margin-bottom: 50px;
@@ -426,23 +442,23 @@ a:hover, afocus {
 .masthead {
   background-color: #ffffff;
   overflow: hidden;
-  height: 660px;
+  height: 680px;
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .masthead {
-    height: 100%;
+    height: 50% !important;
   }
 }
 .masthead__subheading {
-  margin-top: 40px;
+  margin-top: 30px;
   font-weight: 700;
   line-height: 1.5714285714;
   font-size: 20px;
 }
 @media (min-width: 768px) {
   .masthead__subheading {
-    margin-top: 100px;
+    margin-top: 70px;
   }
 }
 .masthead__heading {
@@ -471,9 +487,9 @@ a:hover, afocus {
   .masthead__image {
     overflow: visible;
     width: 140%;
-    height: 120%;
-    margin-top: -110px;
-    object-fit: fill;
+    height: 90%;
+    margin-top: -50px;
+    object-fit: contain;
   }
 }
 
@@ -507,6 +523,128 @@ a:hover, afocus {
 
 .acf-map img {
   max-width: inherit !important;
+}
+
+.navigation {
+  position: relative;
+}
+.navigation__burger {
+  display: block;
+  z-index: 120;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  margin: 110px 50px 0 0;
+}
+@media (min-width: 992px) {
+  .navigation__burger {
+    margin: 120px 40px 0 0;
+  }
+}
+@media (min-width: 992px) {
+  .navigation__burger {
+    display: none;
+  }
+}
+.navigation__burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.navigation__list {
+  background-color: #000000;
+  margin: 0;
+  height: 100% !important;
+  z-index: 2;
+  width: 100% !important;
+  padding: 150px 0;
+  margin-left: -5px !important;
+  padding-right: 10px;
+}
+@media (min-width: 992px) {
+  .navigation__list {
+    height: 0;
+    padding-top: 45px;
+    background-color: transparent;
+  }
+}
+.navigation__list li {
+  list-style: none;
+}
+.navigation__list li a {
+  color: #ffffff;
+  font-size: 35px;
+}
+.navigation__list li a:hover, .navigation__list li afocus {
+  color: #E52D27;
+  transition: ease-in-out 0.5s;
+}
+@media (min-width: 992px) {
+  .navigation__list li a {
+    font-size: 20px;
+  }
+}
+.navigation__dropdown {
+  z-index: 2;
+  top: -130%;
+  position: fixed;
+  width: 105vw;
+  height: 100vh;
+  margin-left: -4%;
+}
+@media (min-width: 992px) {
+  .navigation__dropdown {
+    top: 0;
+    position: relative;
+  }
+}
+
+@media (min-width: 992px) {
+  .navigation__list .menu-main-menu-container #menu-main-menu {
+    display: flex;
+  }
+  .navigation__list .menu-main-menu-container #menu-main-menu li {
+    margin: 10px;
+  }
+  .navigation__list .menu-main-menu-container #menu-main-menu li a {
+    color: #ffffff;
+  }
+  .navigation__list .menu-main-menu-container #menu-main-menu li:last-child a:last-child {
+    background-color: #E52D27;
+    color: #ffffff;
+    border-style: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-weight: 700;
+    transition: ease-in-out 0.5s;
+    margin-right: 0;
+    cursor: poiner;
+  }
+  .navigation__list .menu-main-menu-container #menu-main-menu li:last-child a:last-child:after {
+    content: url("assets/images/icons/cevron.png");
+  }
+  .navigation__list .menu-main-menu-container #menu-main-menu li:last-child a:last-child:hover, .navigation__list .menu-main-menu-container #menu-main-menu li:last-child a:last-child:focus {
+    background-color: #E52D27;
+    color: #ffffff;
+  }
+}
+
+.open {
+  top: 0;
+  z-index: 100;
+}
+
+.toggle .line__one {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line__two {
+  opacity: 0;
+}
+.toggle .line__three {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .about {

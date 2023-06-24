@@ -5,9 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/template-news.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_navigation.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/custom/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_masthead.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_masthead.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/masthead.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/masthead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/news.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/super-stars.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/super-stars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template-superstars.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-superstars.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +41,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/assets/js/custom/custom.js" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/assets/scss/custom/_global.scss" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/assets/scss/custom/blocks/_masthead.scss" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/assets/scss/custom/blocks/_navigation.scss" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/assets/scss/custom/components/_header.scss" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/assets/scss/custom/components/buttons.scss" root0="SKIP_INSPECTION" />
   </component>
   <component name="JoomlaConfiguration">
     <joomlaConfigPath />
@@ -67,7 +87,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.reader.mode&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -119,7 +139,9 @@
       <workItem from="1686492669907" duration="3174000" />
       <workItem from="1686930043526" duration="11014000" />
       <workItem from="1686998152102" duration="21186000" />
-      <workItem from="1687023032329" duration="2012000" />
+      <workItem from="1687023032329" duration="2060000" />
+      <workItem from="1687084815454" duration="16066000" />
+      <workItem from="1687610691422" duration="3737000" />
     </task>
     <servers />
   </component>

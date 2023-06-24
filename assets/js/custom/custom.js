@@ -1,3 +1,18 @@
+// Nav
+
+const burger = document.querySelector(".navigation__burger");
+
+const navSlide = () => {
+    const nav = document.querySelector(".navigation__dropdown");
+    console.log(burger);
+    nav.classList.toggle("open");
+    nav.style.transition="ease-in .5s"
+
+    burger.classList.toggle("toggle");
+}
+
+burger.addEventListener("click", navSlide);
+
 // FAQ accordion
 const faqBars = document.querySelectorAll(".js-faq-bar");
 

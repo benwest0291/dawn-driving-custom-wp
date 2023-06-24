@@ -54,3 +54,19 @@
   font-size: $font-size-sm;
   padding: 8px 12px;
 }
+
+.nav__btn{
+  background-color: $black;
+  color: $white;
+  border-style: none;
+  border-radius: $border-radius;
+  font-size: 16px;
+  padding: 10px 17px;
+  font-weight: $font-weight-semibold;
+  transition: ease-in-out .5s;
+
+  &:hover, &:focus{
+    background-color: $red;
+    color: $white;
+  }
+}
