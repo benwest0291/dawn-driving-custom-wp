@@ -1,126 +1,117 @@
 // Colors
-
-$red: #E52D27;
-$black: #000000;
 $white: #ffffff;
-$grey: #666666;
-$off-white: #FBF8F8;
-
-
+$black: #191414;
+$red: #F70D1A;
+$blue: #F6F8FA;
+$gray: #D3D3D3;
 
 $primary: $black;
 $secondary: $red;
+$third: $white;
 
 $theme-colors: (
-    "primary": $primary,
-    "secondary": $secondary
-);
-
-$colors: (
-  "red": $green,
-  "white": $white,
-  "black": $black,
-  "grey": $grey,
-  "off-white": $off-white
+        "primary": $primary,
+        "secondary": $secondary
 );
 
 // Spacing
-
 $spacers: () !default;
 $spacers: map-merge(
-    (
-            0: 0,
-            1: 10px,
-            2: 20px,
-            3: 30px,
-            4: 40px,
-            5: 50px,
-            6: 60px,
-            7: 70px,
-            8: 80px,
-            9: 90px,
-            10: 100px
-    ),
-    $spacers
+                (
+                        0: 0,
+                        1: 10px,
+                        105: 15px,
+                        2: 20px,
+                        205: 25px,
+                        3: 30px,
+                        4: 40px,
+                        5: 50px,
+                        6: 60px,
+                        7: 70px,
+                        8: 80px,
+                        9: 90px,
+                        10: 100px
+                ),
+                $spacers
 );
 
 // Body
-
-$body-bg: #ffffff;
-$body-color: $black;
+$body-bg: $blue;
 
 // Links
+$link-decoration: none;
+$link-hover-decoration: none;
 
-$link-color: $red;
-$link-decoration: underline;
-$link-hover-color: $black;
-$link-hover-decoration: underline;
+// Components
+$border-radius: 30px;
 
-// Grid
-
+// Grid columns
 $grid-gutter-width: 40px;
-$grid-gutter-width-xxs: 8px;
-$grid-gutter-width-xs: 20px;
-$grid-gutter-width-small: 28px;
-$grid-gutter-width-medium: 58px;
-$grid-gutter-width-large: 76px;
-$grid-gutter-width-xl: 96px;
-
-
-$border-radius: 7px;
 
 // Typography
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans&family=Sofia&display=swap');
-$font-family-sans-serif: 'Inter', sans-serif;
-$font-family-serif: 'Libre Franklin', sans-serif;
-
-$font-family-base: $font-family-sans-serif;
+$font-family-sans-serif: 'Popins', sans-serif;
 
 $font-size-base: 1.125rem; // 18px
-$font-size-lg: 1.5rem; // 20px
-$font-size-sm: 16px; // 16px
-$font-size-xs: 0.875rem; // 14pxs
 
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
 
-$line-height-base: 1.571428571428571; // 22/14
-$line-height-base-lg: 1.625; // 26/16
-$line-height-base-xs: 1.666666666666667; // 20/12
-
-$font-weight-normal: 500;
-$font-weight-semibold: 700;
-$font-weight-bold: 800;
-$font-weight-base: $font-weight-normal;
-
-$headings-font-family: $font-family-serif;
-$headings-font-weight-normal: 500;
-$headings-font-weight-bold: 700;
-$headings-font-weight-extra-bold: 800;
-$headings-font-weight: $headings-font-weight-extra-bold;
-$headings-color: $black;
+$headings-font-weight: $font-weight-bold;
 
 // Buttons
+$btn-font-size: $font-size-base;
+$btn-border-width: 2px;
 
-$btn-border-width: 1px;
 $btn-font-weight: $font-weight-bold;
 $btn-box-shadow: none;
 $btn-focus-box-shadow: $btn-box-shadow;
 $btn-active-box-shadow: $btn-box-shadow;
-$btn-border-radius: 0;
-$btn-border-radius-sm: $btn-border-radius;
+
+$btn-font-size-sm: 1rem;
+$btn-border-radius-sm: $border-radius;
+
+$btn-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out !default;
 
 // Forms
+$label-margin-bottom: 14px;
 
-$input-bg: #DDDDDD;
+$input-bg: $white;
+$input-font-size: $font-size-base;
 $input-color: $body-color;
-$input-border-color: #979797;
-$input-border-width: 1px;
+$input-border-color: #D4DDE5;
+$input-border-width: 2px;
 $input-box-shadow: none;
-$input-border-radius: 0;
-$input-placeholder-color: #6C6C6C;
 
-$input-focus-border-color: $green;
 $input-focus-box-shadow: none;
 
-$form-group-margin-bottom: 10px;
-$input-height: 40px;
+$input-placeholder-color: #c0c5cb;
+$input-height: 42px;
 
+// - Form Label
+$form-label-margin-bottom: 14px;
+$form-label-font-weight: $font-weight-bold;
+//$form-label-color: $navy;
+
+// - Form Select
+$form-select-bg: $white;
+$form-select-focus-box-shadow: none;
+
+// - Form Check
+$form-check-margin-bottom: 10px;
+$form-check-input-focus-box-shadow: none;
+
+// Form Input Group
+$input-group-addon-bg: $white;
+
+// FA
+$font-family-icons: 'Font Awesome 5 Pro';
+$font-icon-weight-regular: 400;
+$font-icon-weight-light: 300;
+
+// Cards
+$card-border-width: 0;
+$card-height: 100%;
+$card-spacer-x: 20px;
+$card-spacer-y: 20px;

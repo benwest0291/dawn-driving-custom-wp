@@ -1,64 +1,59 @@
-body {
-    font-size: $font-size-lg;
-    line-height: $line-height-base-lg;
-    background-color: $off-white;
-    font-family: $font-family-base !important;
-    overflow-x: hidden;
-  }
+// Body
 
-
-h1,h2,h3,h4,h5,h6{
-  font-weight: $font-weight-bold;
-  font-family: $font-family-base !important;
-  color: $primary;
+html{
+  scroll-behavior: smooth;
 }
 
-p{
-  font-size: 16px;
+body{
+  background: $blue;
+  font-family: $font-family-base;
+  overflow-x: hidden;
 }
 
 // Links
 a {
-  font-weight: $font-weight-base;
-  transition: $green .3s ease;
-  text-decoration: none;
+  font-weight: $font-weight-normal;
+}
 
-  transition: ease-in-out .5s;
+p{
+  color: #CBD5E1;
+}
 
-  &:hover, &focus{
-      color: $black;
-      text-decoration: none;
+h3, h4,h5,h6,{
+  color: $white;
+  line-height: $line-height-base;
+}
+
+ul{
+  color: #CBD5E1;
+  li{
+    line-height: $line-height-base;
   }
 }
 
-// Colors
-.color-white {
-  color: #ffffff !important;
+.projects li::before {
+  content: "\2022";
+  color: $green;
+  font-weight: $font-weight-bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
-.color-red {
-  color: $red !important;
+span{
+  color: $green;
 }
 
-.color-grey {
-  color: $grey !important;
+.social__icon{
+  color: $white;
+  font-size: 35px;
+  transition: ease-in-out .5s;
+
+  &:hover, &focus{
+    color: $green;
+  }
 }
 
-.color-black {
-  color: $black !important;
-}
-
-// Weights
-.font-weight-semi-bold {
-  font-weight: $font-weight-semibold;
-}
-
-// Fonts
-.times-bold {
-  //Fonts
-  $base-font-family: $font-family-base; 
-  font-weight: normal;
-}
 
 // Text Block
 .text-block {
@@ -67,119 +62,48 @@ a {
   }
 }
 
-.text-sm {
-  font-size: $font-size-base; // 18px
-}
-
-.text-lg {
-  font-size: $font-size-lg;
-  line-height: $line-height-base-lg;
-}
-
+// Typography
 .text-xs {
-  font-size: $font-size-xs;
-  line-height: $line-height-base-xs;
+  font-size: 0.875rem; // 14px
+  line-height: 1.428571428571429; // 20/14
 }
 
-.grid-gap{
-  padding: 6px
+.text-sm {
+  font-size: 1rem;
+  line-height: 1.375; // 22/16
 }
 
-.dev-by{
-  height: 40px;
+.fw-medium {
+  font-weight: $font-weight-medium !important;
 }
 
-
-// Grid
-.row.xs-gutters {
-  margin-left: calc($grid-gutter-width-xs / 2);
-  margin-right: calc($grid-gutter-width-xs / 2);
-
-  & > [class*='col'] {
-    padding-left: calc($grid-gutter-width-xs / 2);
-    padding-right: calc($grid-gutter-width-xs / 2);
-  }
+// Colors
+.text-white {
+  color: $white !important;
 }
 
-.row.xxs-gutters {
-  margin-left: calc($grid-gutter-width-xxs / 2);
-  margin-right: calc($grid-gutter-width-xxs / 2);
-
-  & > [class*='col'] {
-    padding-left: calc($grid-gutter-width-xxs / 2);
-    padding-right: calc($grid-gutter-width-xxs / 2);
-  }
+.text-inherit {
+  color: inherit !important;
 }
 
-.row.small-gutters {
-  margin-left: calc($grid-gutter-width-small / 2);
-  margin-right: calc($grid-gutter-width-small / 2);
+// Animate Cards
+.to-animate {
+  opacity: 0;
+  transform: scale(.6);
+  transition: transform .4s ease, opacity .3s ease;
 
-  & > [class*='col'] {
-    padding-left: calc($grid-gutter-width-small / 2);
-    padding-right: calc($grid-gutter-width-small / 2);
+  &.in {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
-.row.medium-gutters {
-  @include media-breakpoint-up(lg) {
-    margin-left: calc($grid-gutter-width-medium / 2);
-    margin-right: calc($grid-gutter-width-medium / 2);
-  }
+// White Block BGs
+.block-white-bg {
+  background-color: $white;
 
-  & > [class*='col'] {
-    @include media-breakpoint-up(lg) {
-      padding-left: calc($grid-gutter-width-medium / 2);
-      padding-right: calc($grid-gutter-width-medium / 2);
-    }
-  }
-}
-
-.row.large-gutters {
-  @include media-breakpoint-up(lg) {
-    margin-left: calc($grid-gutter-width-medium / 2);
-    margin-right: calc($grid-gutter-width-medium / 2);
-  }
-
-  @include media-breakpoint-up(xl) {
-    margin-left: calc($grid-gutter-width-large / 2);
-    margin-right: calc($grid-gutter-width-large / 2);
-  }
-
-  & > [class*='col'] {
-    @include media-breakpoint-up(lg) {
-      padding-left: calc($grid-gutter-width-medium / 2);
-      padding-right: calc($grid-gutter-width-medium / 2);
-    }
-
-    @include media-breakpoint-up(xl) {
-      padding-left: calc($grid-gutter-width-large / 2);
-      padding-right: calc($grid-gutter-width-large / 2);
-    }
-  }
-}
-
-.row.xl-gutters {
-  @include media-breakpoint-up(lg) {
-    margin-left: calc($grid-gutter-width-medium / 2);
-    margin-right: calc($grid-gutter-width-medium / 2);
-  }
-
-  @include media-breakpoint-up(xl) {
-    margin-left: calc($grid-gutter-width-xl / 2);
-    margin-right: calc($grid-gutter-width-xl / 2);
-  }
-
-  & > [class*='col'] {
-    @include media-breakpoint-up(lg) {
-      padding-left: calc($grid-gutter-width-medium / 2);
-      padding-right: calc($grid-gutter-width-medium / 2);
-    }
-
-    @include media-breakpoint-up(xl) {
-      padding-left: calc($grid-gutter-width-xl / 2);
-      padding-right: calc($grid-gutter-width-xl / 2);
-    }
+  & + & {
+    padding-top: 0 !important;
   }
 }
 

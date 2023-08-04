@@ -4,44 +4,51 @@
  * Stylesheets and Scripts
  *
  */
-function dawn_driving_files()
+function add_theme_scripts()
 {
-	global $wp_query;
-	$mapKey = get_theme_mod('map_api_key');
+    // Styles
+    wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css', array(), '1');
+    wp_enqueue_style('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1');
+    wp_enqueue_style('poppins', '//fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Sofia&display=swap');
+    wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/css/styles.css', array(), '1.1');
 
+    // Scripts
+    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1', true);
+    wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js', array('jquery'), '2.11.6', true);
+    wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js', array('jquery'), '5.2.3', true);
+    wp_enqueue_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js', array('jquery'), '1.8.1', true);
+    wp_register_script('custom', get_stylesheet_directory_uri() . '/assets/js/custom.js', array('jquery'), '1', true);
 
-	// Styles
-	wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css', array(), '1');
-	wp_enqueue_style("font-awesome", "//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
-	wp_enqueue_style("dawn_driving_main_styles", get_theme_file_uri("assets/css/style.css"));
-
-	// Scripts
-    wp_enqueue_script('googlMaps', 'https://maps.googleapis.com/maps/api/js?key=' . $mapKey, array('jquery'), '1', true);
-	wp_enqueue_script('bootstrap', get_template_directory_uri() . '/assets/js/vendor/bootstrap.min.js', array('jquery'), '4.5.3', true);
-    wp_enqueue_script("dawn-driving-js", get_theme_file_uri("assets/js/custom/custom.js"), array("jquery"), "1.0", true);
-
+    wp_enqueue_script('custom');
+    wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/ff41bfe92a.js', array(), '6.2.0', true);
 }
 
-
-add_action("wp_enqueue_scripts", "dawn_driving_files");
+add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
 /**
  *
  * Site setup
  *
  */
-function dawn_driving_setup()
+function dawndriving_setup()
 {
-	register_nav_menu("headerMenu", "Header Menu Location");
-	register_nav_menu("footerMenuNews", "Footer Menu News");
-	register_nav_menu("footerMenuSuperStars", "Footer Menu SuperStars");
-	register_nav_menu("footerNav", "Footer Navigation");
-
-	add_theme_support("title-tag");
-	add_theme_support("post-thumbnails");
+    // Register navigation menus.
+    register_nav_menus(
+    array(
+        'header' => esc_html__('Header Menu', 'portfolio'),
+        'footer' => esc_html__('Footer Menu', 'portfolio'),
+        )
+    );
 }
 
-add_action("after_setup_theme", "dawn_driving_setup");
+add_action("after_setup_theme", "dawndriving_setup");
+
+/**
+ *
+ * Register Custom Post Types
+ *
+ */
+require_once(get_template_directory() . '/inc/post-types/superstars.php');
 
 /**
  *
@@ -50,74 +57,103 @@ add_action("after_setup_theme", "dawn_driving_setup");
  */
 require_once(get_template_directory() . '/inc/customizer.php');
 
+
 /**
  *
- * Allow SVG Media Upload
+ * Allow SVG Upload
  *
  */
-function cc_mime_types($mimes)
-{
+
+function allow_svg_upload( $mimes ) {
     $mimes['svg'] = 'image/svg+xml';
     return $mimes;
 }
+add_filter( 'upload_mimes', 'allow_svg_upload' );
 
-add_filter('upload_mimes', 'cc_mime_types');
+// Enable SVG file preview in media library
+function svg_media_library( $response, $attachment, $meta ) {
+    if ( $response['mime'] === 'image/svg+xml' ) {
+        $response['sizes']['thumbnail'] = [
+            'url' => $response['url'],
+            'width' => $response['width'],
+            'height' => $response['height'],
+        ];
+        $response['sizes']['full'] = [
+            'url' => $response['url'],
+            'width' => $response['width'],
+            'height' => $response['height'],
+        ];
+    }
+    return $response;
+}
+add_filter( 'wp_prepare_attachment_for_js', 'svg_media_library', 10, 3 );
 
 /**
  *
- * Google Maps
+ * Show featured images
  *
  */
 
-function my_acf_google_map_api($api)
-{
-    $mapKey = get_theme_mod('map_api_key');
-    $api['key'] = $mapKey;
-    return $api;
+add_action( 'after_setup_theme', 'cxc_add_post_thumbnail_supports', 99 );
+function cxc_add_post_thumbnail_supports() {
+    add_theme_support( 'post-thumbnails' );
 }
-add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
-
 
 /**
  *
- * Render Masthead
+ * Add Options to WP admin
+ *
+ */
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page();
+
+}
+
+/**
+ *
+ * Reusable blocks
+ *
+ */
+
+/**
+ *
+ * Masthead
  *
  */
 function render_masthead($prefix = "", $args = array())
 {
-	$defaults = array(
-        "masthead_subheading" => get_field($prefix . "_masthead_subheading"),
-		"masthead_heading" => get_field($prefix . "_masthead_heading"),
-		"masthead_button" => get_field($prefix . "_masthead_button"),
-		"masthead_button_url" => get_field($prefix . "_masthead_button_url"),
-        "masthead_image" => get_field($prefix . "_masthead_image"),
-	);
-
-	$data = array_merge($defaults, $args);
-
-	include(get_template_directory() . "/inc/blocks/masthead.php");
-	unset($data);
-}
-
-/**
- *
- * Render Lower banner
- *
- */
-function render_lower_banner($prefix = "", $args = array())
-{
     $defaults = array(
-        "banner_text" => get_field($prefix . "_banner_text"),
-        "banner_bg" => get_field($prefix . "_banner_bg"),
-        "banner_button_text" => get_field($prefix . "_banner_button_text"),
-        "banner_button_url" => get_field($prefix . "_banner_button_url"),
+        "masthead_top_heading" => get_field($prefix . "_masthead_top_heading"),
+        "masthead_main_heading" => get_field($prefix . "_masthead_main_heading"),
+        "masthead_content" => get_field($prefix . "_masthead_content"),
+        "masthead_button_one_text" => get_field($prefix . "_masthead_button_one_text"),
+        "masthead_button_one_link" => get_field($prefix . "_masthead_button_one_link"),
+        "masthead_button_two_text" => get_field($prefix . "_masthead_button_two_text"),
+        "masthead_button_two_link" => get_field($prefix . "_masthead_button_two_link"),
+        "masthead_image" => get_field($prefix . "_masthead_image")
     );
 
     $data = array_merge($defaults, $args);
 
-    include(get_template_directory() . "/inc/blocks/lower-banner.php");
+    include(get_template_directory() . "/inc/blocks/masthead.php");
     unset($data);
 }
 
+/**
+ *
+ * Text Block
+ *
+ */
+function render_text($prefix = "", $args = array())
+{
+    $defaults = array(
+        "text_heading" => get_field($prefix . "_text_heading"),
+        "text_content" => get_field($prefix . "_text_content"),
+    );
 
+    $data = array_merge($defaults, $args);
 
+    include(get_template_directory() . "/inc/blocks/text.php");
+    unset($data);
+}
