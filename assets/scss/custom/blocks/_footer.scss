@@ -18,7 +18,7 @@
 
   &__link{
     color: $white;
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   &__icons{
@@ -30,6 +30,7 @@
   &__contact{
     color: $white;
     margin: 10px 5px;
+    text-decoration: none !important;
   }
 
   &__hr{

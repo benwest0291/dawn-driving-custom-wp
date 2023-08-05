@@ -40,13 +40,13 @@ $phone = get_theme_mod('contact_telephone');
                 <div class="d-flex mt-md-3 mr-2">
                     <?php if ($phone != null) { ?>
                         <i class="fa-solid fa-phone mr-1 footer__icons"></i>
-                        <p class="footer__contact"><?php echo $phone; ?></p>
+                        <a title="Dawn driving phone number" class="footer__contact" href="tel:<?php echo $phone; ?>"><?php echo $phone; ?></a>
                     <?php } ?>
                 </div>
                 <div class="d-flex">
                     <?php if ($email != null) { ?>
                         <i class="fa-solid fa-envelope mr-1 footer__icons"></i>
-                        <p class="footer__contact"><?php echo $email; ?></p>
+                        <a title="Dawn driving email" class="footer__contact" href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a>
                     <?php } ?>
                 </div>
             </div>

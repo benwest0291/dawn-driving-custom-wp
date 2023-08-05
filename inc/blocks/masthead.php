@@ -34,7 +34,7 @@ $credential = get_field('credential');
                     <?php } ?>
                 </div>
                 <?php if ($credential != null) { ?>
-                    <img class="masthead__credential" src="<?php echo $credential['url'];?>" />
+                    <img class="masthead__credential mt-3" src="<?php echo $credential['url'];?>" />
                 <?php } ?>
             </div>
 

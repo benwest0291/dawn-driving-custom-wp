@@ -12,6 +12,11 @@ body {
 
 a {
   font-weight: 400;
+  text-decoration: none;
+  transition: ease-in 0.5s;
+}
+a:hover, a:focus {
+  color: #F70D1A;
 }
 
 p {
@@ -172,6 +177,7 @@ span {
 .header__contact {
   color: #ffffff;
   margin: 10px 5px;
+  text-decoration: none !important;
 }
 .header__logo {
   width: 110px;
@@ -270,7 +276,7 @@ span {
 }
 .footer__link {
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 .footer__icons {
   color: #ffffff;
@@ -280,6 +286,7 @@ span {
 .footer__contact {
   color: #ffffff;
   margin: 10px 5px;
+  text-decoration: none !important;
 }
 .footer__hr {
   background: #ffffff;
@@ -323,6 +330,9 @@ span {
 }
 .masthead__paragraph {
   color: #ffffff;
+}
+.masthead__credential {
+  width: 120px;
 }
 
 /*# sourceMappingURL=styles.css.map */
