@@ -1,0 +1,35 @@
+.navigation{
+
+  &__burger{
+    display: block;
+    z-index: 200;
+    position: absolute;
+    top: 85px;
+    right: 30px;
+    cursor: pointer;
+  }
+
+  &__burger div{
+    width: 25px;
+    height: 3px;
+    background-color: $white;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+}
+
+.toggle{
+  .line__one{
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .line__two{
+    opacity: 0;
+  }
+  .line__three{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}

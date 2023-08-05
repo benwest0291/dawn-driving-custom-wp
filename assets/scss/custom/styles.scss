@@ -8,10 +8,13 @@
 @import "global";
 
 // Components
+@import "../custom/components/navigation";
+@import "../custom/components/buttons";
 
 // Blocks
 @import "../custom/blocks/header";
 @import "../custom/blocks/footer";
+@import "../custom/blocks/masthead";
 
 
 // Templates

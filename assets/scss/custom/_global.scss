@@ -1,16 +1,15 @@
 // Body
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800&family=Sofia&display=swap');
 html{
   scroll-behavior: smooth;
 }
 
 body{
-  background: $blue;
   font-family: $font-family-base;
   overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
 }
 
-// Links
 a {
   font-weight: $font-weight-normal;
 }
@@ -19,9 +18,8 @@ p{
   color: #CBD5E1;
 }
 
-h3, h4,h5,h6,{
-  color: $white;
-  line-height: $line-height-base;
+h1,h2,h3,h4,h5,h6,{
+  font-family: 'Poppins', sans-serif;
 }
 
 ul{
@@ -33,7 +31,7 @@ ul{
 
 .projects li::before {
   content: "\2022";
-  color: $green;
+  color: $red;
   font-weight: $font-weight-bold;
   display: inline-block;
   width: 1em;
@@ -41,7 +39,7 @@ ul{
 }
 
 span{
-  color: $green;
+  color: $red;
 }
 
 .social__icon{
@@ -50,7 +48,7 @@ span{
   transition: ease-in-out .5s;
 
   &:hover, &focus{
-    color: $green;
+    color: $red;
   }
 }
 
