@@ -1,0 +1,112 @@
+.contact__form {
+  background-color: $black;
+  border-radius: 25px;
+  max-width: 100%;
+  margin: 20px 0;
+  padding: 50px 30px 30px 30px;;
+
+  @include media-breakpoint-up(lg) {
+    padding: 50px 25px 25px 25px;
+    margin-top: -250px;
+  }
+
+  &__heading {
+    color: $white;
+    font-weight: $font-weight-normal;
+    font-size: 32px;
+  }
+
+  &__notice {
+    color: $white;
+    margin-top: 15px;
+  }
+
+  &__terms {
+    margin-top: 30px;
+    color: $white;
+  }
+
+  &__terms span {
+    color: $red;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    background-color: $red;
+    color: $white;
+    margin-bottom: 0;
+    transition: ease-in-out .5s;
+    padding: 15px;
+    font-size: $font-size-lg;
+    border-radius: $border-radius;
+
+    &:hover, &:focus {
+      background-color: $white;
+      color: $black;
+    }
+  }
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: -20px;
+}
+
+.input-container i {
+  position: absolute;
+  top: 70%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: $black;
+  margin: 0;
+}
+
+.input-container input,
+.input-container select{
+  padding-left: 35px;
+}
+
+.input-container textarea{
+  padding: 10px;
+}
+
+.input-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E") no-repeat right 10px center;
+  background-size: 12px;
+}
+
+input, select{
+  width: 100%;
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px;
+}
+
+textarea{
+  width: 100%;
+  border-radius: 10px;
+  border-style: none;
+  height: 180px;
+  margin-top: 30px;
+}
+
+::placeholder{
+  color: $black;
+}
+
+hr{
+  height: 2px;
+  background-color: $red;
+  margin-bottom: -5px;
+}
+
+.wpcf7-response-output{
+  color: $white;
+  border-color: $red !important;
+  padding: 10px;
+  border-radius: 5px;
+}

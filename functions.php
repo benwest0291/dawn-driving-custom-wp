@@ -119,22 +119,18 @@ if( function_exists('acf_add_options_page') ) {
  * Masthead
  *
  */
-function render_masthead($prefix = "", $args = array())
+function render_lower_banner($prefix = "", $args = array())
 {
     $defaults = array(
-        "masthead_top_heading" => get_field($prefix . "_masthead_top_heading"),
-        "masthead_main_heading" => get_field($prefix . "_masthead_main_heading"),
-        "masthead_content" => get_field($prefix . "_masthead_content"),
-        "masthead_button_one_text" => get_field($prefix . "_masthead_button_one_text"),
-        "masthead_button_one_link" => get_field($prefix . "_masthead_button_one_link"),
-        "masthead_button_two_text" => get_field($prefix . "_masthead_button_two_text"),
-        "masthead_button_two_link" => get_field($prefix . "_masthead_button_two_link"),
-        "masthead_image" => get_field($prefix . "_masthead_image")
+        "background_image" => get_field($prefix . "_background_image"),
+        "main_heading" => get_field($prefix . "_main_heading"),
+        "button_text" => get_field($prefix . "_button_text"),
+        "button_link" => get_field($prefix . "_button_link"),
     );
 
     $data = array_merge($defaults, $args);
 
-    include(get_template_directory() . "/inc/blocks/masthead.php");
+    include(get_template_directory() . "/inc/blocks/lower-banner.php");
     unset($data);
 }
 

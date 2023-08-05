@@ -1,0 +1,12 @@
+.introduction{
+
+  &__subheading{
+    font-weight: 300;
+    color: $gray;
+  }
+
+  &__heading{
+    font-weight: 600;
+    line-height: $line-height-sm;
+  }
+}
