@@ -4,9 +4,9 @@ $menuLocations = get_nav_menu_locations();
 $logo = get_theme_mod('company_logo');
 $email = get_theme_mod('contact_email');
 $phone = get_theme_mod('contact_telephone');
-$facebook = get_theme_mod('facebook');
-$instagram = get_theme_mod('instagram');
-$twitter = get_theme_mod('twitter');
+$facebook = get_theme_mod('facebook_url');
+$instagram = get_theme_mod('instagram_url');
+$twitter = get_theme_mod('twitter_url');
 
 if (isset($menuLocations['header'])) {
     $header_links = wp_get_nav_menu_items($menuLocations['header']);
@@ -58,7 +58,7 @@ if (isset($menuLocations['header'])) {
                             <a title="Instagram" href="<?php echo $instagram; ?>" target="_blank"><i class="fa-brands fa-instagram header__icons"></i></a>
                         <?php } ?>
 
-                        <?php if ($twitter == null) { ?>
+                        <?php if ($twitter != null) { ?>
                             <a title="Twitter" href="<?php echo $twitter; ?>" target="_blank"><i class="fa-brands fa-x-twitter header__icons"></i></a>
                         <?php } ?>
                     </div>

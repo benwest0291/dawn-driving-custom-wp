@@ -161,7 +161,7 @@ span {
   z-index: 100;
 }
 .header__top {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(5px);
 }
 .header__icons {
@@ -251,6 +251,47 @@ span {
 
 .js__links__open {
   right: 0;
+}
+
+.footer {
+  background: #000000;
+  padding-top: 40px;
+}
+.footer__logo {
+  width: 130px;
+}
+.footer__infomation {
+  color: #ffffff;
+}
+.footer__heading {
+  padding-top: 40px;
+  color: #ffffff;
+  font-weight: 400;
+}
+.footer__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer__icons {
+  color: #ffffff;
+  margin: 12px 5px;
+  font-size: 1.125rem;
+}
+.footer__contact {
+  color: #ffffff;
+  margin: 10px 5px;
+}
+.footer__hr {
+  background: #ffffff;
+}
+.footer__base p {
+  color: #ffffff;
+}
+.footer__social {
+  background-color: #D3D3D3;
+  padding: 8px;
+  border-radius: 55%;
+  font-size: 24px;
 }
 
 .masthead {

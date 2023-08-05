@@ -1,0 +1,49 @@
+.footer{
+  background: $black;
+  padding-top: 40px;
+
+  &__logo{
+    width: 130px;
+  }
+
+  &__infomation{
+    color: $white;
+  }
+
+  &__heading{
+    padding-top: 40px;
+    color: $white;
+    font-weight: $font-weight-normal;
+  }
+
+  &__link{
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__icons{
+    color: $white;
+    margin: 12px 5px;
+    font-size: $font-size-base;
+  }
+
+  &__contact{
+    color: $white;
+    margin: 10px 5px;
+  }
+
+  &__hr{
+    background: $white;
+  }
+
+  &__base p{
+    color: $white;
+  }
+
+  &__social{
+    background-color: $gray;
+    padding: 8px;
+    border-radius: 55%;
+    font-size: 24px;
+  }
+}
