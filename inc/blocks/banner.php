@@ -14,7 +14,7 @@ $credential = $data['credential'];
                     <h1 class="banner__heading"><?php echo $heading; ?></h1>
                 <?php } ?>
                 <div class="d-flex mt-4">
-                    <i class="banner__breadcrumb fa-solid fa-house mr-1"></i>
+                    <a href="<?php echo site_url('/'); ?>"><i class="banner__breadcrumb fa-solid fa-house mr-1"></i></a>
                     <?php
                     if (function_exists('yoast_breadcrumb')) {
                         yoast_breadcrumb('</p><p id=“breadcrumbs">', '</p><p>');

@@ -1,7 +1,7 @@
 .btn__primary{
   background-color: $red;
   border-radius: $border-radius;
-  border-style: none;
+  border: solid 1px $red;
   color: $white !important;
   font-weight: $font-weight-base;
   font-size: $font-size-base;

@@ -1,0 +1,26 @@
+.about{
+
+  &__subheading{
+    font-weight: 300;
+    color: $gray;
+  }
+
+  &__heading{
+    font-weight: 600;
+    line-height: $line-height-sm;
+  }
+
+  &__image{
+    margin-top: 20px;
+    height: 85%;
+    border-radius: 11px;
+    object-fit: cover;
+    -webkit-box-shadow: -2px 11px 23px -18px #010100;
+    box-shadow: -2px 11px 23px -18px #010100;
+
+    @include media-breakpoint-up(md) {
+      margin-top: 50px;
+      height: 85%;
+    }
+  }
+}

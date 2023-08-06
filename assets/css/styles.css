@@ -137,7 +137,7 @@ span {
 .btn__primary {
   background-color: #F70D1A;
   border-radius: 5px;
-  border-style: none;
+  border: solid 1px #F70D1A;
   color: #ffffff !important;
   font-weight: 400;
   font-size: 1rem;
@@ -534,6 +534,7 @@ hr {
   padding: 9px;
   border-radius: 50%;
   font-size: 22px;
+  color: #010100;
 }
 
 .masthead {
@@ -665,11 +666,11 @@ hr {
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 160px 0;
+  padding: 220px 0 80px 0;
 }
 @media (min-width: 768px) {
   .banner {
-    padding: 220px 0 80px 0;
+    padding: 260px 0 80px 0;
   }
 }
 .banner__heading {
@@ -687,6 +688,10 @@ hr {
 .banner__breadcrumb {
   color: #ffffff;
   font-size: 18px;
+  transition: ease-in 0.5s;
+}
+.banner__breadcrumb:hover, .banner__breadcrumb:focus {
+  color: #F70D1A;
 }
 .banner__credential {
   width: 120px;
@@ -694,6 +699,29 @@ hr {
 
 .breadcrumb_last {
   color: #F70D1A;
+}
+
+.about__subheading {
+  font-weight: 300;
+  color: #D3D3D3;
+}
+.about__heading {
+  font-weight: 600;
+  line-height: 1.25;
+}
+.about__image {
+  margin-top: 20px;
+  height: 85%;
+  border-radius: 11px;
+  object-fit: cover;
+  -webkit-box-shadow: -2px 11px 23px -18px #010100;
+  box-shadow: -2px 11px 23px -18px #010100;
+}
+@media (min-width: 768px) {
+  .about__image {
+    margin-top: 50px;
+    height: 85%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

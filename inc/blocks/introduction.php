@@ -17,7 +17,7 @@ $formShortcode = '[contact-form-7 id="' . $form->ID . '"]';
                 <?php } ?>
 
                 <?php if ($main_heading != null){ ?>
-                    <h2 class="introduction__heading mb-1"><?php  echo $main_heading; ?></h2>
+                    <h2 class="introduction__heading mb-3"><?php  echo $main_heading; ?></h2>
                 <?php } ?>
 
                 <?php if ($content != null){ ?>
