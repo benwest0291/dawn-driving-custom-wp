@@ -7,7 +7,7 @@
                 <p class="news__card__date mb-2"><?php echo get_the_date(); ?></p>
             </div>
             <h3 class="news__card__heading"><?php echo the_title(); ?></h3>
-            <div class="d-flex news__card__author__section mt-1">
+            <div class="news__card__author__section d-flex n mt-1">
                 <?php echo get_avatar( get_the_author_meta( 'ID' ), 52 );  ?>
                 <p class="news__card__author mt-2 ml-2"><?php the_author(); ?></p>
             </div>

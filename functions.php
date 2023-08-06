@@ -139,15 +139,16 @@ function render_lower_banner($prefix = "", $args = array())
  * Text Block
  *
  */
-function render_text($prefix = "", $args = array())
+function render_banner($prefix = "", $args = array())
 {
     $defaults = array(
-        "text_heading" => get_field($prefix . "_text_heading"),
-        "text_content" => get_field($prefix . "_text_content"),
+        "heading" => get_field($prefix . "_heading"),
+        "background_image" => get_field($prefix . "_background_image"),
+        "credential" => get_field($prefix . "_credential"),
     );
 
     $data = array_merge($defaults, $args);
 
-    include(get_template_directory() . "/inc/blocks/text.php");
+    include(get_template_directory() . "/inc/blocks/banner.php");
     unset($data);
 }
