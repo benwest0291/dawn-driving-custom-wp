@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_superstar-slider.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/custom/components/superstar-card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/blocks/superstar-slider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inc/partials/superstar-card.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_lower-banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/custom/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_booking-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_booking-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/vendor/_variable-override.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/vendor/_variable-override.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-page.php" beforeDir="false" afterPath="$PROJECT_DIR$/front-page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +156,8 @@
       <workItem from="1691232454490" duration="948000" />
       <workItem from="1691233414395" duration="2794000" />
       <workItem from="1691237008656" duration="16144000" />
-      <workItem from="1691253332946" duration="72000" />
+      <workItem from="1691253332946" duration="1170000" />
+      <workItem from="1691319924303" duration="6251000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,22 @@
+.superstar__slider{
+  background-color: $blue;
+  padding-bottom: 50px;
+
+  &__heading{
+    font-weight: 600;
+    line-height: $line-height-sm;
+  }
+
+  &__btn{
+    background-color: $red;
+    color: $white;
+    padding: 8px 20px;
+    border-radius: $border-radius;
+    font-size: $font-size-base;
+  }
+}
+
+.slick-slide {
+  margin: 0 10px;
+  padding-bottom: 50px;
+}

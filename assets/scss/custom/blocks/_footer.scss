@@ -34,7 +34,7 @@
   }
 
   &__hr{
-    background: $white;
+    background: $gray;
     margin-bottom: 20px;
   }
 
@@ -44,8 +44,8 @@
 
   &__social{
     background-color: $gray;
-    padding: 8px;
-    border-radius: 55%;
-    font-size: 24px;
+    padding: 9px;
+    border-radius: 50%;
+    font-size: 22px;
   }
 }

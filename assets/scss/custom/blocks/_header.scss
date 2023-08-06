@@ -19,8 +19,14 @@
 
   &__contact{
     color: $white;
-    margin: 10px 5px;
+    margin: 12px 5px;
     text-decoration: none !important;
+    font-size: 11px;
+
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-sm;
+      margin: 10px 5px;
+    }
   }
 
   &__logo{
@@ -29,11 +35,11 @@
 
   &__links__container{
     position: fixed;
-    padding-top: 80px;
+    padding-top: 30px;
     right: -100%;
     background: $black;
     backdrop-filter: blur(0px);
-    margin-top: 100px;
+    margin-top: 90px;
     height: 100vh;
     transition: right .5s ease-in;
 
@@ -81,7 +87,7 @@
 
   &__link {
     margin-top: 26px !important;
-    padding: 5px 10px;
+    padding: 8px 10px;
 
 
     @include media-breakpoint-up(md) {
