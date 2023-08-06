@@ -10,7 +10,7 @@ $superstars_button_url = get_field('superstars_button_url', 'option');
             <div class="row">
                 <div class="col-12 col-md-6">
                     <?php if ($superstars_subheading != null){ ?>
-                        <h6 class="introduction__subheading mt-4 mb-2"><?php echo $superstars_subheading; ?></h6>
+                        <h6 class="superstar__slider__subheading mt-4 mb-2"><?php echo $superstars_subheading; ?></h6>
                     <?php } ?>
 
                     <?php if($superstars_heading  != null) { ?>

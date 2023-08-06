@@ -82,7 +82,7 @@ if (isset($menuLocations['header'])) {
                 <nav class="header__links__container col-12 col-md-6">
                     <ul class="header__links list-unstyled">
                         <?php foreach ($header_links as $item) { ?>
-                            <li class="header__link m-1">
+                            <li class="header__link mt-1 ml-1 mb-1">
                                 <a title="<?php echo $item->title; ?>" class="text-decoration-none" href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a>
                             </li>
                         <?php } ?>
@@ -99,7 +99,7 @@ if (isset($menuLocations['header'])) {
                                 <?php } ?>
 
                                 <?php if($twitter != null){ ?>
-                                    <a title="Twitter"  href="<?php echo $twitter;?>" target="_blank"><i class="fa-brands fa-twitter-x social__icon"></i></a>
+                                    <a title="Twitter"  href="<?php echo $twitter;?>" target="_blank"><i class="fa-brands fa-x-twitter social__icon"></i></a>
                                 <?php } ?>
                             </div>
                         </div>

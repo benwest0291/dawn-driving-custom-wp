@@ -9,4 +9,6 @@ include('inc/blocks/superstar-slider.php');
 
 render_lower_banner('lower_banner_homepage');
 
+include('inc/blocks/news-slider.php');
+
 get_footer();

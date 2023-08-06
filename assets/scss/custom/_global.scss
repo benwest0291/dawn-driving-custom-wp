@@ -13,9 +13,11 @@ a {
   font-weight: $font-weight-normal;
   text-decoration: none;
   transition: ease-in .5s;
+  text-decoration: none;
 
   &:hover, &:focus{
     color: $red;
+    text-decoration: none;
   }
 }
 
