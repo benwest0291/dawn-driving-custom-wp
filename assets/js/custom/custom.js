@@ -54,3 +54,22 @@ jQuery(function ($) {
             }]
     });
 });
+
+// Accordion arrow animation
+
+let accordionHeaders = document.querySelectorAll('.accordion__header');
+accordionHeaders.forEach(function (header) {
+    header.addEventListener('click', function () {
+        // Find the arrow icon inside the header
+        let arrowIcon = header.querySelector('.accordion__arrow');
+
+        // Toggle the 'rotate' class on the arrow icon
+        arrowIcon.classList.toggle('rotate');
+
+        // Find all the other arrow icons and remove the 'rotate' class from them
+        let otherArrowIcons = document.querySelectorAll('.accordion__arrow:not(.rotate)');
+        otherArrowIcons.forEach(function (icon) {
+            icon.classList.remove('rotate');
+        });
+    });
+});
