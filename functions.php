@@ -136,11 +136,12 @@ function render_lower_banner($prefix = "", $args = array())
 
 /**
  *
- * Text Block
+ * Banner
  *
  */
 function render_banner($prefix = "", $args = array())
 {
+
     $defaults = array(
         "heading" => get_field($prefix . "_heading"),
         "background_image" => get_field($prefix . "_background_image"),
@@ -152,3 +153,5 @@ function render_banner($prefix = "", $args = array())
     include(get_template_directory() . "/inc/blocks/banner.php");
     unset($data);
 }
+
+
