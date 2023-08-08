@@ -6,12 +6,15 @@
  */
 function add_theme_scripts()
 {
+    $mapKey = get_theme_mod('map_api_key');
+
     // Styles
     wp_enqueue_style('bootstrap', get_stylesheet_directory_uri() . '/assets/css/bootstrap.css', array(), '1.1');
     wp_enqueue_style('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '1.1');
     wp_enqueue_style('styles', get_stylesheet_directory_uri() . '/assets/css/styles.css', array(), '1.2');
 
     // Scripts
+    wp_enqueue_script('google', 'https://maps.googleapis.com/maps/api/js?key=' . $mapKey, array('jquery'), '1', true);
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1', true);
     wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js', array('jquery'), '2.11.6', true);
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js', array('jquery'), '5.2.3', true);
@@ -154,4 +157,16 @@ function render_banner($prefix = "", $args = array())
     unset($data);
 }
 
+/**
+ *
+ * Google Maps
+ *
+ */
+function my_acf_google_map_api($api)
+{
+    $mapKey = get_theme_mod('map_api_key');
+    $api['key'] = $mapKey;
+    return $api;
 
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');

@@ -48,5 +48,11 @@
     border-radius: 50%;
     font-size: 22px;
     color: $black;
+    transition: .5s ease-in;
+
+    &:hover, &:focus{
+      background-color: $red;
+      color: $white;
+    }
   }
 }

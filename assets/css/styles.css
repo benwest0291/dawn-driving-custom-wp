@@ -400,6 +400,10 @@ hr {
   color: #ffffff;
   margin: 12px 5px;
   font-size: 1rem;
+  transition: 0.5s ease-in-out;
+}
+.header__icons:hover, .header__icons:focus {
+  color: #d72232;
 }
 .header__contact {
   color: #ffffff;
@@ -464,7 +468,7 @@ hr {
   }
 }
 .header__links a:hover, .header__links afocus {
-  color: #d72232;
+  color: #d72232 !important;
 }
 .header__link {
   margin-top: 26px !important;
@@ -486,6 +490,7 @@ hr {
   }
   .header__link:last-child:hover, .header__link:last-child:focus {
     background-color: #010100 !important;
+    color: #ffffff !important;
   }
 }
 
@@ -535,6 +540,11 @@ hr {
   border-radius: 50%;
   font-size: 22px;
   color: #010100;
+  transition: 0.5s ease-in;
+}
+.footer__social:hover, .footer__social:focus {
+  background-color: #d72232;
+  color: #ffffff;
 }
 
 .masthead {
@@ -667,6 +677,7 @@ hr {
   background-size: cover;
   background-position: center;
   padding: 220px 0 80px 0;
+  background-repeat: no-repeat;
 }
 @media (min-width: 768px) {
   .banner {
@@ -813,6 +824,41 @@ a.page-numbers:hover {
   font-weight: 600;
   line-height: 1.25;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.contact__subheading {
+  font-weight: 300;
+  color: #e3e3e3;
+}
+.contact__heading {
+  font-weight: 600;
+  line-height: 1.25;
+}
+.contact__number, .contact__email {
+  color: #010100;
+  font-size: 1rem;
+}
+.contact__icon {
+  background-color: #e3e3e3;
+  padding: 9px;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #010100;
+  transition: 0.5s ease-in;
+}
+.contact__icon:hover, .contact__icon:focus {
+  background-color: #d72232;
+  color: #ffffff;
+}
+
+.acf-map {
+  width: 100%;
+  height: 600px;
+  margin-top: 50px;
+}
+
+.acf-map img {
+  max-width: inherit !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

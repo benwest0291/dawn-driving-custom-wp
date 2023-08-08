@@ -74,32 +74,26 @@ function bw_customizer_settings($wp_customize)
             'type' => 'text'
         )));
     /**
-     * 404 Page Settings
+     * Map Settings
      */
     // Add Site Settings
-    $wp_customize->add_section('four-oh-four', array(
-        'title' => '404 Page Settings',
+    $wp_customize->add_section('map_settings', array(
+        'title' => 'Map Settings',
         'description' => '',
-        'priority' => 48,
+        'priority' => 50,
     ));
-    // 404 Page Title
-    $wp_customize->add_setting('four_oh_four_title');
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'four_oh_four_title',
+    // Map API key
+    $wp_customize->add_setting('map_api_key');
+    $wp_customize->add_control(new WP_Customize_Control(
+        $wp_customize,
+        'map_api_key',
         array(
-            'label' => 'Page Title',
-            'section' => 'four-oh-four',
-            'settings' => 'four_oh_four_title',
+            'label' => 'Google Maps API Key',
+            'section' => 'map_settings',
+            'settings' => 'map_api_key',
             'type' => 'text'
-        )));
-    // 404 Page Content
-    $wp_customize->add_setting('four_oh_four_content');
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'four_oh_four_content',
-        array(
-            'label' => 'Page Content',
-            'section' => 'four-oh-four',
-            'settings' => 'four_oh_four_content',
-            'type' => 'textarea'
-        )));
+        )
+    ));
 
     function themeslug_sanitize_dropdown_pages( $page_id, $setting ) {
         $page_id = absint( $page_id );

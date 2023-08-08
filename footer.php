@@ -20,6 +20,8 @@ $phone = get_theme_mod('contact_telephone');
                     <p class="footer__infomation mt-3 pr-5 mr-md-0"><?php echo $footer_text ?></p>
                 <?php } ?>
 
+                <a href="<?php echo site_url('/terms-conditions');?>">Terms & Conditions</a>
+
                 <div class="d-flex mt-2 mt-md-4 mb-md-4">
                     <?php if ($facebook != null) { ?>
                         <a title="Facebook" href="<?php echo $facebook; ?>" target="_blank"><i class="fa-brands fa-facebook footer__social mr-1"></i></a>
