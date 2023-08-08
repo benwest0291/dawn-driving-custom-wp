@@ -1,11 +1,9 @@
 <?php
-
 function dawn_driving_post_types()
 {
-    //Super Stars
     register_post_type("superstars", array(
         "supports" => array("title", "editor", "page-attributes", "excerpt", "thumbnail"),
-        "rewrite" => array("slug" => "superstars"),
+        "rewrite" => array("slug" => "superstars"), // Customize the slug as needed
         "has_archive" => false,
         "public" => true,
         "show_in_rest" => false,
@@ -21,4 +19,3 @@ function dawn_driving_post_types()
 }
 
 add_action("init", "dawn_driving_post_types");
-
