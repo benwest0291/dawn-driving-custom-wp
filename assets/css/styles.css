@@ -86,6 +86,10 @@ span {
   color: inherit !important;
 }
 
+.color-black {
+  color: #010100 !important;
+}
+
 .to-animate {
   opacity: 0;
   transform: scale(0.6);
@@ -161,6 +165,39 @@ span {
   text-align: center;
   padding: 8px 25px;
   text-decoration: none;
+}
+
+.btn__facebook {
+  background-color: #3B5998;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn__facebook:hover, .btn__facebook:focus {
+  color: #ffffff;
+}
+
+.btn__instagram {
+  background-color: #C13584;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn__instagram:hover, .btn__instagram:focus {
+  color: #ffffff;
+}
+
+.btn__twitter {
+  background-color: #010100;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn__twitter:hover, .btn__twitter:focus {
+  color: #ffffff;
 }
 
 .contact__form {
@@ -384,6 +421,39 @@ hr {
   text-align: center;
 }
 
+.small__card {
+  width: 100%;
+  background-color: #F6F8FA;
+  border-radius: 5px;
+  transition: 0.3s;
+  -webkit-box-shadow: -2px 11px 23px -18px #010100;
+  box-shadow: -2px 11px 23px -18px #010100;
+  height: 120px;
+  cursor: pointer;
+}
+.small__card:hover, .small__card:focus {
+  transform: translate(0, -5px);
+}
+.small__card:hover .effect, .small__card:focus .effect {
+  transition: 0.5s ease-in;
+  color: #d72232;
+  text-decoration: none;
+}
+.small__card__image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+.small__card__heading {
+  font-weight: 600;
+  line-height: 1.25;
+}
+.small__card__link {
+  color: #010100;
+  font-size: 0.875rem;
+}
+
 .header {
   background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(5px);
@@ -584,7 +654,7 @@ hr {
 
 .introduction__subheading {
   font-weight: 300;
-  color: #e3e3e3;
+  color: #495057;
 }
 .introduction__heading {
   font-weight: 600;
@@ -620,7 +690,7 @@ hr {
 }
 .superstar__slider__subheading {
   font-weight: 300;
-  color: #e3e3e3;
+  color: #495057;
 }
 .superstar__slider__heading {
   font-weight: 600;
@@ -650,7 +720,7 @@ hr {
 }
 .news__slider__subheading {
   font-weight: 300;
-  color: #e3e3e3;
+  color: #495057;
 }
 .news__slider__heading {
   font-weight: 600;
@@ -752,7 +822,7 @@ hr {
 
 .about__subheading {
   font-weight: 300;
-  color: #e3e3e3;
+  color: #495057;
 }
 .about__heading {
   font-weight: 600;
@@ -794,7 +864,7 @@ a.page-numbers:hover {
 
 .faq__subheading {
   font-weight: 300;
-  color: #e3e3e3;
+  color: #495057;
 }
 .faq__heading {
   font-weight: 600;
@@ -829,7 +899,7 @@ a.page-numbers:hover {
 
 .contact__subheading {
   font-weight: 300;
-  color: #e3e3e3;
+  color: #495057;
 }
 .contact__heading {
   font-weight: 600;
@@ -860,6 +930,28 @@ a.page-numbers:hover {
 
 .acf-map img {
   max-width: inherit !important;
+}
+
+.news__image {
+  border-radius: 5px;
+  -webkit-box-shadow: -2px 11px 23px -18px #010100;
+  box-shadow: -2px 11px 23px -18px #010100;
+}
+.news__avatar img {
+  border-radius: 50%;
+  height: 52px;
+}
+.news__share__heading, .news__other__heading {
+  font-weight: 600;
+  line-height: 1.25;
+}
+.news__btn {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .news__btn {
+    width: 48%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

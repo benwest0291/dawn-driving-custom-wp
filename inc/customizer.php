@@ -95,6 +95,24 @@ function bw_customizer_settings($wp_customize)
         )
     ));
 
+    /**
+     * 404 Settings
+     */
+    // Add Site Settings
+    $wp_customize->add_section('error', array(
+        'title' => 'Error Settings',
+        'description' => '',
+        'priority' => 45,
+    ));
+    $wp_customize->add_setting('error_settings');
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'error_settings',
+        array(
+            'label' => '404 Error',
+            'section' => 'error',
+            'settings' => 'error_settings',
+            'type' => 'text'
+        )));
+
     function themeslug_sanitize_dropdown_pages( $page_id, $setting ) {
         $page_id = absint( $page_id );
         return ( 'publish' == get_post_status( $page_id ) ? $page_id : $setting->default );

@@ -1,10 +1,16 @@
 <?php
-get_header();?>
+get_header();
+$error_message = get_theme_mod('error_settings');
+?>
     <section class="error__banner">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8">
-                        <h1 class="error__banner__heading">Opps! Sorry that was not suppose to happen!</h1>
+                    <?php if($error_message == null){ ?>
+                        <h1 class="error__banner__heading">Opps, Sorry 404</h1>
+                    <?php } else { ?>
+                        <h1 class="error__banner__heading"><?php echo $error_message; ?></h1>
+                    <?php } ?>
                     <div class="d-flex mt-4">
                         <a href="<?php echo site_url('/'); ?>"><i class="banner__breadcrumb fa-solid fa-house mr-1"></i></a>
                         <?php

@@ -1,0 +1,26 @@
+.news{
+
+  &__image{
+    border-radius: $border-radius;
+    -webkit-box-shadow: -2px 11px 23px -18px #010100;
+    box-shadow: -2px 11px 23px -18px #010100;
+  }
+
+  &__avatar img{
+    border-radius: 50%;
+    height: 52px;
+  }
+
+  &__share__heading, &__other__heading{
+    font-weight: 600;
+    line-height: $line-height-sm;
+  }
+
+  &__btn{
+    width: 100%;
+
+    @include media-breakpoint-up(md) {
+      width: 48%;
+    }
+  }
+}
