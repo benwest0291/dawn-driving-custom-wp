@@ -14,9 +14,9 @@
 }
 
 .btn__secondary{
-  background-color: $gray-900;
+  background-color: $black;
   border-radius: $border-radius;
-  border-style: none;
+  border: solid 1px $white;
   color: $white !important;
   font-weight: $font-weight-base;
   font-size: 18px;

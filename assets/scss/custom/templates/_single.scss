@@ -1,9 +1,11 @@
-.news{
+.post{
 
   &__image{
     border-radius: $border-radius;
     -webkit-box-shadow: -2px 11px 23px -18px #010100;
     box-shadow: -2px 11px 23px -18px #010100;
+    height: 500px;
+    object-fit: cover;
   }
 
   &__avatar img{
@@ -16,7 +18,7 @@
     line-height: $line-height-sm;
   }
 
-  &__btn{
+  &__btns{
     width: 100%;
 
     @include media-breakpoint-up(md) {

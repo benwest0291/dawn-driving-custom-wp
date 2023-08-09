@@ -154,9 +154,9 @@ span {
 }
 
 .btn__secondary {
-  background-color: #3e3636;
+  background-color: #010100;
   border-radius: 5px;
-  border-style: none;
+  border: solid 1px #ffffff;
   color: #ffffff !important;
   font-weight: 400;
   font-size: 18px;
@@ -932,24 +932,26 @@ a.page-numbers:hover {
   max-width: inherit !important;
 }
 
-.news__image {
+.post__image {
   border-radius: 5px;
   -webkit-box-shadow: -2px 11px 23px -18px #010100;
   box-shadow: -2px 11px 23px -18px #010100;
+  height: 500px;
+  object-fit: cover;
 }
-.news__avatar img {
+.post__avatar img {
   border-radius: 50%;
   height: 52px;
 }
-.news__share__heading, .news__other__heading {
+.post__share__heading, .post__other__heading {
   font-weight: 600;
   line-height: 1.25;
 }
-.news__btn {
+.post__btns {
   width: 100%;
 }
 @media (min-width: 768px) {
-  .news__btn {
+  .post__btns {
     width: 48%;
   }
 }

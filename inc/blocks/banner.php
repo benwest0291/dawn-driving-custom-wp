@@ -22,7 +22,7 @@ $credential = $data['credential'];
                     ?>
                 </div>
                 <?php if($credential != null){ ?>
-                    <img class="banner__credential mt-3" src="<?php echo $credential['url'];?>" />
+                    <img class="banner__credential mt-3" src="<?php echo $credential['url'];?>"/>
                 <?php } ?>
             </div>
             <div class="col-12 col-md-8">
