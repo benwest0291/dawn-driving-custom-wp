@@ -25,4 +25,9 @@
       width: 48%;
     }
   }
+
+  &__location{
+    font-weight: 600;
+    line-height: $line-height-sm;
+  }
 }

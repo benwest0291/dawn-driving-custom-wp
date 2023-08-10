@@ -769,7 +769,7 @@ hr {
 }
 .banner__breadcrumb {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 14px;
   transition: ease-in 0.5s;
 }
 .banner__breadcrumb:hover, .banner__breadcrumb:focus {
@@ -954,6 +954,10 @@ a.page-numbers:hover {
   .post__btns {
     width: 48%;
   }
+}
+.post__location {
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 /*# sourceMappingURL=styles.css.map */

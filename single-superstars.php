@@ -1,5 +1,6 @@
 <?php
 get_header();
+$test_centre = get_field('test_location');
 
 render_banner('superstar_banner');?>
     <section class="post">
@@ -7,6 +8,9 @@ render_banner('superstar_banner');?>
             <div class="row">
                 <div class="col-12 col-lg-8">
                     <img class="post__image w-100 mt-4 mb-2 mb-md-3" src="<?php echo the_post_thumbnail_url("post"); ?>">
+                    <?php if ($test_centre != null ){ ?>
+                        <h5 class="post__location mb-2">Test location: <span><?php echo $test_centre; ?></span></h5>
+                    <?php } ?>
                     <?php echo the_content(); ?>
                     <div class="post__btns">
                         <h4 class="post__share__heading">Share on</h4>

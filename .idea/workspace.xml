@@ -8,11 +8,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_banner.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/custom/templates/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/templates/_single.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/blocks/banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/banner.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single-superstars.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-superstars.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/single.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +152,8 @@
       <workItem from="1691424180291" duration="9369000" />
       <workItem from="1691434240892" duration="455000" />
       <workItem from="1691508727456" duration="12110000" />
-      <workItem from="1691598192272" duration="8350000" />
+      <workItem from="1691598192272" duration="9301000" />
+      <workItem from="1691672258520" duration="419000" />
     </task>
     <servers />
   </component>
