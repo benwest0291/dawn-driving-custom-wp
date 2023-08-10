@@ -1,10 +1,10 @@
 <div class="news__card">
     <a title="<?php echo the_title(); ?>" href="<?php echo the_permalink(); ?>">
-        <img class="news__card__image" src="<?php echo the_post_thumbnail_url("post"); ?>">
+        <img class="news__card__image" src="<?php echo the_post_thumbnail_url("post"); ?>" alt="<?php echo the_title(); ?>"/>
         <div class="p-3">
             <div class="d-flex justify-content-between">
                 <i class="fa-solid fa-clock news__card__clock"></i>
-                <p class="news__card__date mb-2"><?php echo get_the_date(); ?></p>
+                <p class="news__card__date mb-1"><?php echo get_the_date(); ?></p>
             </div>
             <h3 class="news__card__heading"><?php echo the_title(); ?></h3>
             <div class="news__card__author__section d-flex n mt-1">

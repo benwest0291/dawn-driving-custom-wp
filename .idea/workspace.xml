@@ -8,9 +8,26 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/_global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_introduction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_introduction.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_masthead.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_masthead.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/components/_superstar-card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/components/_superstar-card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/templates/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/templates/_contact.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/custom/templates/_single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/templates/_single.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/vendor/_variable-override.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/vendor/_variable-override.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/banner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/lower-banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/lower-banner.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/masthead.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/masthead.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/partials/news-card.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/partials/news-card.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/partials/small-card.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/partials/small-card.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/partials/superstar-card.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/partials/superstar-card.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single-superstars.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-superstars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template-about.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-about.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template-contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-contact.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +170,7 @@
       <workItem from="1691434240892" duration="455000" />
       <workItem from="1691508727456" duration="12110000" />
       <workItem from="1691598192272" duration="9301000" />
-      <workItem from="1691672258520" duration="419000" />
+      <workItem from="1691672258520" duration="9343000" />
     </task>
     <servers />
   </component>

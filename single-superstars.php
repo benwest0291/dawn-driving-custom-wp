@@ -1,6 +1,9 @@
 <?php
 get_header();
 $test_centre = get_field('test_location');
+$sevenoaks_link = 'https://www.google.com/maps/place/Sevenoaks+Driving+Test+Centre/@51.2715212,0.18564,17z/data=!3m1!4b1!4m6!3m5!1s0x47df4df85cac04f7:0x396c3aa431ae04eb!8m2!3d51.2715212!4d0.1882149!16s%2Fg%2F11dfj45j7h?entry=ttu';
+$maidstone_link = 'https://www.google.com/maps/place/Maidstone+DVSA+DTC/@51.2716515,0.029151,11z/data=!3m1!5s0x47df3187ff042d67:0xe7e0379cc64d4a68!4m10!1m2!2m1!1smaidstone+driving+centre!3m6!1s0x47df31c070ec223d:0x3ac18fd288cbe8f8!8m2!3d51.2608319!4d0.5264462!15sChhtYWlkc3RvbmUgZHJpdmluZyBjZW50cmVaGiIYbWFpZHN0b25lIGRyaXZpbmcgY2VudHJlkgEOZHJpdmluZ19zY2hvb2yaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUkNka3hZTlRsM1JSQULgAQA!16s%2Fg%2F11fkr2t9r7?entry=ttu';
+$test_centre_link = '';
 
 render_banner('superstar_banner');?>
     <section class="post">
@@ -8,8 +11,13 @@ render_banner('superstar_banner');?>
             <div class="row">
                 <div class="col-12 col-lg-8">
                     <img class="post__image w-100 mt-4 mb-2 mb-md-3" src="<?php echo the_post_thumbnail_url("post"); ?>">
-                    <?php if ($test_centre != null ){ ?>
-                        <h5 class="post__location mb-2">Test location: <span><?php echo $test_centre; ?></span></h5>
+                    <? if ($test_centre == 'Sevenoaks Test Centre'){
+                        $test_centre_link = $sevenoaks_link;
+                    } else {
+                        $test_centre_link = $maidstone_link;
+                    }
+                    if ($test_centre != null ){ ?>
+                        <h5 class="post__location mb-2">Test location: <a title="<?php echo $test_centre; ?>"href="<?php echo $test_centre_link; ?>" target="_blank"><span><?php echo $test_centre; ?></span></a></h5>
                     <?php } ?>
                     <?php echo the_content(); ?>
                     <div class="post__btns">

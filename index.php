@@ -17,7 +17,7 @@ $button_text = get_field('button_text', $post_id );
 $button_link = get_field('button_link', $post_id );
 ?>
 
-<section class="banner" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(<?php echo ($bg_image != null ? $bg_image['url'] : ''); ?>);">
+<section class="banner" style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<?php echo ($bg_image != null ? $bg_image['url'] : ''); ?>);" alt="<?php echo $bg_image['alt']; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">
@@ -35,7 +35,7 @@ $button_link = get_field('button_link', $post_id );
                     ?>
                 </div>
                 <?php if($credential != null){ ?>
-                    <img class="banner__credential mt-3" src="<?php echo $credential['url'];?>" />
+                    <img class="banner__credential mt-3" src="<?php echo $credential['url'];?>" alt="<?php echo $credential['alt']; ?>" />
                 <?php } ?>
             </div>
             <div class="col-12 col-md-8">
@@ -57,7 +57,7 @@ $button_link = get_field('button_link', $post_id );
                     <?php }
                 } else { ?>
                     <div class="mt-md-4 mb-4">
-                        <h5 class="mb-4">Whoops! Sorry, That was not supposed to happen</h5>
+                        <h5 class="mb-4">Sorry, No news to load</h5>
                         <a title="Dawn driving homepage" class="btn__primary" href="<?php echo site_url("/") ?>">Return to homepage</a>
                     </div>
                     <?php
@@ -67,10 +67,9 @@ $button_link = get_field('button_link', $post_id );
         <?php
         echo paginate_links(); ?>
     </div>
-    </div>
 </section>
 
-<section class="lower__banner mt-3" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(<?php echo ($background_lower_image != null ? $background_lower_image['url'] : ''); ?>);">
+<section class="lower__banner mt-3" style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<?php echo ($background_lower_image != null ? $background_lower_image['url'] : ''); ?>);" alt="<?php echo $background_lower_image['alt']; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">

@@ -5,7 +5,8 @@ $button_text = $data['button_text'];
 $button_link = $data['button_link'];
 ?>
 
-<section class="lower__banner" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(<?php echo ($background_image != null ? $background_image['url'] : ''); ?>);">
+
+<section class="lower__banner" style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<?php echo ($background_image != null ? $background_image['url'] : ''); ?>);" alt="<?php echo $background_image['alt']; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">

@@ -4,7 +4,7 @@ $bg_image= $data["background_image"];
 $credential = $data['credential'];
 ?>
 
-<section class="banner" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(<?php echo ($bg_image != null ? $bg_image['url'] : ''); ?>);">
+<section class="banner" style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<?php echo ($bg_image != null ? $bg_image['url'] : ''); ?>);" alt="<?php echo $bg_image['alt']; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">
@@ -22,7 +22,7 @@ $credential = $data['credential'];
                     ?>
                 </div>
                 <?php if($credential != null){ ?>
-                    <img class="banner__credential mt-3" src="<?php echo $credential['url'];?>"/>
+                    <img class="banner__credential mt-3" src="<?php echo $credential['url'];?>" alt="<?php echo $credential['alt']; ?>"/>
                 <?php } ?>
             </div>
             <div class="col-12 col-md-8">

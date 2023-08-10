@@ -22,13 +22,14 @@ a:hover, a:focus {
 }
 
 p {
-  color: #191414;
+  color: #333333;
   line-height: 1.5;
   font-size: 1rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
+  color: #333333;
 }
 
 ul {
@@ -87,7 +88,7 @@ span {
 }
 
 .color-black {
-  color: #010100 !important;
+  color: #000000 !important;
 }
 
 .to-animate {
@@ -152,11 +153,16 @@ span {
   text-decoration: none;
   width: 250px;
 }
+.btn__primary:hover, .btn__primary:focus {
+  background-color: #ffffff;
+  border: solid 1px #ffffff;
+  color: #000000 !important;
+}
 
 .btn__secondary {
-  background-color: #010100;
+  background-color: #000000;
   border-radius: 5px;
-  border: solid 1px #ffffff;
+  border: solid 1px #000000;
   color: #ffffff !important;
   font-weight: 400;
   font-size: 18px;
@@ -165,6 +171,10 @@ span {
   text-align: center;
   padding: 8px 25px;
   text-decoration: none;
+}
+.btn__secondary:hover, .btn__secondary:focus {
+  background-color: #d72232;
+  border: solid 1px #d72232;
 }
 
 .btn__facebook {
@@ -190,7 +200,7 @@ span {
 }
 
 .btn__twitter {
-  background-color: #010100;
+  background-color: #000000;
   color: #ffffff;
   padding: 8px 20px;
   border-radius: 5px;
@@ -201,7 +211,7 @@ span {
 }
 
 .contact__form {
-  background-color: #010100;
+  background-color: #000000;
   border-radius: 5px;
   max-width: 100%;
   margin: 20px 0;
@@ -243,7 +253,7 @@ span {
 }
 .contact__form__btn:hover, .contact__form__btn:focus {
   background-color: #ffffff;
-  color: #010100;
+  color: #000000;
 }
 
 .input-container {
@@ -257,7 +267,7 @@ span {
   left: 10px;
   transform: translateY(-50%);
   pointer-events: none;
-  color: #010100;
+  color: #000000;
   margin: 0;
 }
 
@@ -294,7 +304,7 @@ textarea {
 }
 
 ::placeholder {
-  color: #010100;
+  color: #000000;
 }
 
 hr {
@@ -304,7 +314,7 @@ hr {
 }
 
 .wpcf7-response-output {
-  color: #010100;
+  color: #000000;
   border-color: #d72232 !important;
   padding: 10px;
   border-radius: 5px;
@@ -315,7 +325,7 @@ hr {
   cursor: pointer;
   background: #ffffff;
   transition: 0.3s;
-  margin-top: 20px;
+  margin: 20px 0;
   border-radius: 5px;
   -webkit-box-shadow: -2px 11px 23px -18px #010100;
   box-shadow: -2px 11px 23px -18px #010100;
@@ -333,21 +343,34 @@ hr {
   width: 100%;
   height: 300px;
   object-fit: cover;
+  z-index: 100;
 }
 @media (min-width: 768px) {
   .superstar__card__image {
     height: 350px;
   }
 }
+.superstar__card__test__centre {
+  top: 10px;
+  right: 10px;
+  color: #ffffff;
+  z-index: 200;
+  padding: 7px 8px;
+  background-color: #000000;
+  border-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 12px;
+}
 .superstar__card__heading {
   font-weight: 600;
   line-height: 1.25;
 }
 .superstar__card__content {
-  color: #010100;
+  color: #000000;
 }
 .superstar__card__btn {
-  background-color: #010100;
+  background-color: #000000;
   color: #ffffff;
   width: 100%;
   padding: 10px 50px;
@@ -410,10 +433,10 @@ hr {
   height: 50px;
 }
 .news__card__content {
-  color: #010100;
+  color: #000000;
 }
 .news__card__btn {
-  background-color: #010100;
+  background-color: #000000;
   color: #ffffff;
   width: 100%;
   padding: 10px 50px;
@@ -450,7 +473,7 @@ hr {
   line-height: 1.25;
 }
 .small__card__link {
-  color: #010100;
+  color: #000000;
   font-size: 0.875rem;
 }
 
@@ -463,7 +486,7 @@ hr {
   z-index: 100;
 }
 .header__top {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.42);
   backdrop-filter: blur(5px);
 }
 .header__icons {
@@ -494,7 +517,7 @@ hr {
   position: fixed;
   padding-top: 30px;
   right: -100%;
-  background: #010100;
+  background: #000000;
   backdrop-filter: blur(0px);
   margin-top: 90px;
   height: 100vh;
@@ -559,7 +582,7 @@ hr {
     color: #d72232;
   }
   .header__link:last-child:hover, .header__link:last-child:focus {
-    background-color: #010100 !important;
+    background-color: #000000 !important;
     color: #ffffff !important;
   }
 }
@@ -569,7 +592,7 @@ hr {
 }
 
 .footer {
-  background: #010100;
+  background: #000000;
   padding-top: 40px;
 }
 .footer__logo {
@@ -609,7 +632,7 @@ hr {
   padding: 9px;
   border-radius: 50%;
   font-size: 22px;
-  color: #010100;
+  color: #000000;
   transition: 0.5s ease-in;
 }
 .footer__social:hover, .footer__social:focus {
@@ -624,7 +647,7 @@ hr {
 }
 @media (min-width: 768px) {
   .masthead {
-    padding: 220px 0;
+    padding: 190px 0;
   }
 }
 .masthead__subheading {
@@ -653,7 +676,7 @@ hr {
 }
 
 .introduction__subheading {
-  font-weight: 300;
+  font-weight: 400;
   color: #495057;
 }
 .introduction__heading {
@@ -705,7 +728,7 @@ hr {
 }
 .superstar__slider__btn:hover, .superstar__slider__btn:focus {
   color: #ffffff;
-  background-color: #010100;
+  background-color: #000000;
   text-decoration: none;
 }
 
@@ -735,7 +758,7 @@ hr {
 }
 .news__slider__btn:hover, .news__slider__btn:focus {
   color: #ffffff;
-  background-color: #010100;
+  background-color: #000000;
   text-decoration: none;
 }
 
@@ -792,11 +815,11 @@ hr {
   cursor: pointer;
   margin-bottom: 15px;
   border-radius: 5px;
-  background-color: #010100;
+  background-color: #000000;
   font-weight: 300;
 }
 .accordion__question {
-  background: #010100;
+  background: #000000;
   padding: 24px;
   color: #ffffff;
   border-radius: 5px;
@@ -851,7 +874,7 @@ hr {
   text-decoration: none;
   border-radius: 5px;
   font-weight: 600;
-  color: #010100;
+  color: #000000;
   margin: 20px 0;
   transition: ease-in-out 0.5s;
 }
@@ -881,7 +904,7 @@ a.page-numbers:hover {
 }
 
 .error__banner {
-  background-color: #010100;
+  background-color: #000000;
   padding: 220px 0 80px 0;
 }
 @media (min-width: 768px) {
@@ -906,7 +929,7 @@ a.page-numbers:hover {
   line-height: 1.25;
 }
 .contact__number, .contact__email {
-  color: #010100;
+  color: #000000;
   font-size: 1rem;
 }
 .contact__icon {
@@ -914,7 +937,7 @@ a.page-numbers:hover {
   padding: 9px;
   border-radius: 50%;
   font-size: 22px;
-  color: #010100;
+  color: #000000;
   transition: 0.5s ease-in;
 }
 .contact__icon:hover, .contact__icon:focus {
@@ -924,7 +947,7 @@ a.page-numbers:hover {
 
 .acf-map {
   width: 100%;
-  height: 600px;
+  height: 480px;
   margin-top: 50px;
 }
 
@@ -936,8 +959,13 @@ a.page-numbers:hover {
   border-radius: 5px;
   -webkit-box-shadow: -2px 11px 23px -18px #010100;
   box-shadow: -2px 11px 23px -18px #010100;
-  height: 500px;
+  height: 250px;
   object-fit: cover;
+}
+@media (min-width: 768px) {
+  .post__image {
+    height: 500px;
+  }
 }
 .post__avatar img {
   border-radius: 50%;

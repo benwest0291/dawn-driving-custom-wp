@@ -11,12 +11,18 @@
   padding: 8px 30px;
   text-decoration: none;
   width: 250px;
+
+  &:hover,&:focus{
+    background-color: $white;
+    border: solid 1px $white;
+    color: $black !important;
+  }
 }
 
 .btn__secondary{
   background-color: $black;
   border-radius: $border-radius;
-  border: solid 1px $white;
+  border: solid 1px $black;
   color: $white !important;
   font-weight: $font-weight-base;
   font-size: 18px;
@@ -25,6 +31,11 @@
   text-align: center;
   padding: 8px 25px;
   text-decoration: none;
+
+  &:hover,&:focus{
+    background-color: $red;
+    border: solid 1px $red;
+  }
 }
 
 .btn__facebook{

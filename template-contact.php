@@ -37,15 +37,13 @@ render_banner('contact_banner');
 
                 <?php if ($phone != null) { ?>
                     <div class="mb-2">
-                        <i class="contact__icon fa-solid fa-phone mr-1"></i>
-                        <a title="Dawn driving phone number" href="tel:<?php echo $phone; ?>" class="contact__number"><?php echo $phone; ?></a>
+                        <a title="Dawn driving phone number" href="tel:<?php echo $phone; ?>" class="contact__number"><i class="contact__icon fa-solid fa-phone mr-1"></i><?php echo $phone; ?></a>
                     </div>
                 <?php } ?>
 
                 <?php if ($email != null) { ?>
                     <div>
-                        <i class="contact__icon fa-solid fa-envelope mr-1"></i>
-                        <a title="Dawn driving phone number" href="tel:<?php echo $email; ?>" class="contact__email"><?php echo $email; ?></a>
+                        <a title="Dawn driving phone number" href="mailto:<?php echo $email; ?>" class="contact__email"><i class="contact__icon fa-solid fa-envelope mr-1"></i><?php echo $email; ?></a>
                     </div>
                 <?php } ?>
 

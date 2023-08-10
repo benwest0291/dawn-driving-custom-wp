@@ -23,13 +23,14 @@ a {
 }
 
 p{
-  color: #191414;
+  color: $black-500;
   line-height: $line-height-base;
   font-size: $font-size-base;
 }
 
 h1,h2,h3,h4,h5,h6,{
   font-family: 'Poppins', sans-serif;
+  color: $black-500;
 }
 
 ul{
@@ -119,3 +120,4 @@ span{
   }
 }
 
+//$black: #010100;

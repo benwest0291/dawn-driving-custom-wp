@@ -43,7 +43,7 @@ if (isset($menuLocations['header'])) {
                         <div class="d-flex">
                             <?php if ($email != null) { ?>
                                 <i class="fa-solid fa-envelope mr-1 header__icons"></i>
-                                <a title="Dawn driving phone number" href="tel:<?php echo $email; ?>" class="header__contact"><?php echo $email; ?></a>
+                                <a title="Dawn driving phone number" href="mailto:<?php echo $email; ?>" class="header__contact"><?php echo $email; ?></a>
                             <?php } ?>
                         </div>
                     </div>

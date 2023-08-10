@@ -9,7 +9,7 @@ $button_text_two_url = get_field('button_text_two_url');
 $bg_image = get_field('bg_image');
 $credential = get_field('credential');
 ?>
-<section class="masthead" style="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(<?php echo ($bg_image != null ? $bg_image['url'] : ''); ?>);">
+<section class="masthead" style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<?php echo ($bg_image != null ? $bg_image['url'] : ''); ?>);" alt="<?php echo $bg_image['alt']; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8">
@@ -34,7 +34,7 @@ $credential = get_field('credential');
                     <?php } ?>
                 </div>
                 <?php if ($credential != null) { ?>
-                    <img class="masthead__credential mt-3" src="<?php echo $credential['url'];?>" />
+                    <img class="masthead__credential mt-3" src="<?php echo $credential['url'];?>" alt="<?php echo $credential['alt']; ?>" />
                 <?php } ?>
             </div>
 

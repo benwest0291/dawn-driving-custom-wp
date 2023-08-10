@@ -41,7 +41,7 @@ render_banner('about_banner');?>
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <img class="about__image w-100" src="<?php echo $image['url'];?>" />
+                <img class="about__image w-100" src="<?php echo $image['url'];?>" alt="<?php echo $image['alt']; ?>"/>
             </div>
         </div>
     </div>
