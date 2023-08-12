@@ -675,6 +675,9 @@ hr {
   width: 120px;
 }
 
+.introduction {
+  background-color: #ffffff;
+}
 .introduction__subheading {
   font-weight: 400;
   color: #495057;

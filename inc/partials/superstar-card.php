@@ -6,14 +6,14 @@ $test_centre_link = '';
 ?>
 <div class="superstar__card position-relative">
     <a title="<?php echo the_title(); ?>" href="<?php echo the_permalink(); ?>">
-        <img class="superstar__card__image " src="<?php echo the_post_thumbnail_url("post"); ?>" alt="<?php echo the_title(); ?>"/>
+        <img class="superstar__card__image" src="<?php echo the_post_thumbnail_url("post"); ?>" alt="<?php echo the_title(); ?>"/>
 
         <? if ($test_centre == 'Sevenoaks Test Centre'){
             $test_centre_link = $sevenoaks_link;
         } else {
             $test_centre_link = $maidstone_link;
-        }
-
+        }?>
+        <?php
         if ($test_centre != null) { ?>
             <a href="<?php echo $test_centre_link; ?>" target="_blank"><h6 class="superstar__card__test__centre effect position-absolute"><?php echo $test_centre; ?></h6></a>
          <?php } ?>

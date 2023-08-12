@@ -24,6 +24,7 @@ if (isset($menuLocations['header'])) {
     <meta name="description" content="<?php bloginfo('description'); ?>"/>
     <?php wp_head(); ?>
     <title><?php wp_title(); ?></title>
+    <meta name="theme-color" content="#000000">
 </head>
 
 <body <?php body_class(); ?>>
