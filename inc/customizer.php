@@ -40,6 +40,7 @@ function bw_customizer_settings($wp_customize)
             'type' => 'textarea'
         )));
 
+
     /**
      * Social Settings
      */

@@ -46,17 +46,19 @@ add_action("after_setup_theme", "dawn_driving_setup");
 
 /**
  *
+ * Register Customizer Fields
+ *
+ */
+require_once(get_template_directory() . '/inc/customizer.php');
+
+
+/**
+ *
  * Register Custom Post Types
  *
  */
 require_once(get_template_directory() . '/inc/post-types/superstars.php');
 
-/**
- *
- * Register Customizer Fields
- *
- */
-require_once(get_template_directory() . '/inc/customizer.php');
 
 
 /**
@@ -99,6 +101,8 @@ add_action( 'after_setup_theme', 'cxc_add_post_thumbnail_supports', 99 );
 function cxc_add_post_thumbnail_supports() {
     add_theme_support( 'post-thumbnails' );
 }
+
+
 
 /**
  *
@@ -170,3 +174,4 @@ function my_acf_google_map_api($api)
 
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
