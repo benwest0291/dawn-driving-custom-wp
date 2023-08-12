@@ -15,8 +15,8 @@ render_banner('superstar_banner');?>
                         $test_centre_link = $sevenoaks_link;
                     } else {
                         $test_centre_link = $maidstone_link;
-                    }
-                    if ($test_centre != null ){ ?>
+                    } ?>
+                    <?php if ($test_centre != null ){ ?>
                         <h5 class="post__location mb-2">Test location: <a title="<?php echo $test_centre; ?>"href="<?php echo $test_centre_link; ?>" target="_blank"><span><?php echo $test_centre; ?></span></a></h5>
                     <?php } ?>
                     <?php echo the_content(); ?>

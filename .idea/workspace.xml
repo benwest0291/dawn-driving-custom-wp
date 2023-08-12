@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/_global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/_global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_introduction.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_introduction.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/partials/superstar-card.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/partials/superstar-card.php" afterDir="false" />
-    </list>
+    <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +152,7 @@
       <workItem from="1691771440133" duration="3745000" />
       <workItem from="1691836889846" duration="269000" />
       <workItem from="1691846405405" duration="931000" />
-      <workItem from="1691849056633" duration="3484000" />
+      <workItem from="1691849056633" duration="3514000" />
     </task>
     <servers />
   </component>
