@@ -377,6 +377,20 @@ hr {
   border-radius: 5px;
   text-align: center;
 }
+.superstar__card__reader__text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  word-break: normal;
+}
 
 .news__card {
   width: 100%;
@@ -443,6 +457,20 @@ hr {
   border-radius: 5px;
   text-align: center;
 }
+.news__card__reader__text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  word-break: normal;
+}
 
 .small__card {
   width: 100%;
@@ -475,6 +503,20 @@ hr {
 .small__card__link {
   color: #000000;
   font-size: 0.875rem;
+}
+.small__card__reader__text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  word-break: normal;
 }
 
 .header {
@@ -551,7 +593,7 @@ hr {
 .header__links a {
   color: #ffffff !important;
   cursor: pointer;
-  font-size: 40px;
+  font-size: 25px;
   transition: 0.5s ease-in-out;
 }
 @media (min-width: 768px) {

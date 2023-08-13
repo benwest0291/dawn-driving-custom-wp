@@ -21,7 +21,7 @@ $test_centre_link = '';
             <h3 class="superstar__card__heading mb-2"><?php echo the_title(); ?></h3>
             <p class="superstar__card__content mt-1 mb-3"><?php echo wp_trim_words(get_the_content(), 7); ?></p>
                 <div class="d-flex">
-                    <a title="<?php echo the_title(); ?>" class="superstar__card__btn effect" href="<?php echo the_permalink(); ?>">Read more</a>
+                    <a title="<?php echo the_title(); ?>" aria-label="<?php echo the_title(); ?>" class="superstar__card__btn effect" href="<?php echo the_permalink(); ?>">Read more <span class="superstar__card__reader__text">Read more</span></a>
                 </div>
         </div>
     </a>

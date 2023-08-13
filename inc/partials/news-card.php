@@ -13,7 +13,7 @@
             </div>
             <p class="news__card__content mt-1 mb-2"><?php echo wp_trim_words(get_the_content(), 18); ?></p>
             <div class="d-flex">
-                <a title="<?php echo the_title(); ?>" class="news__card__btn effect" href="<?php echo the_permalink(); ?>">Read more</a>
+                <a title="<?php echo the_title(); ?>" class="news__card__btn effect" href="<?php echo the_permalink(); ?>">Read more <span class="news__card__reader__text">Read more</span></a>
             </div>
         </div>
     </a>

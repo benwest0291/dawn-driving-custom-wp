@@ -108,7 +108,7 @@ $phone = get_theme_mod('contact_telephone');
             <div class="col-12 col-md-6">
                 <div class="d-flex justify-content-center">
                     <p>Website by </p>
-                    <a title="Ben West Development" href="https://benwest.dev" target="_blank"><img class="ml-1 mb-2" src="<?php echo get_template_directory_uri(); ?>/assets/images/bw-logo.svg" /></a>
+                    <a title="Ben West Development" href="https://benwest.dev" target="_blank"><img class="ml-1 mb-2" src="<?php echo get_template_directory_uri(); ?>/assets/images/bw-logo.svg" alt="BW.dev logo"  /></a>
                 </div>
             </div>
         </div>
