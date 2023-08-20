@@ -91,10 +91,6 @@ span {
   color: #000000 !important;
 }
 
-i {
-  z-index: 1;
-}
-
 .navigation__burger {
   display: block;
   z-index: 200;
@@ -256,6 +252,7 @@ i {
   pointer-events: none;
   color: #000000;
   margin: 0;
+  z-index: 200;
 }
 
 .input-container input,
@@ -305,6 +302,10 @@ hr {
   border-color: #d72232 !important;
   padding: 10px;
   border-radius: 5px;
+}
+
+.wpcf7-spinner {
+  display: none !important;
 }
 
 .superstar__card {

@@ -62,6 +62,7 @@
   pointer-events: none;
   color: $black;
   margin: 0;
+  z-index: 200;
 }
 
 .input-container input,
@@ -111,4 +112,8 @@ hr{
   border-color: $red !important;
   padding: 10px;
   border-radius: 5px;
+}
+
+.wpcf7-spinner{
+  display: none !important;
 }
