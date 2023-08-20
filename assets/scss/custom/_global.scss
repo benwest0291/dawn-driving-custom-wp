@@ -99,25 +99,6 @@ span{
   color: $black !important;
 }
 
-// Animate Cards
-.to-animate {
-  opacity: 0;
-  transform: scale(.6);
-  transition: transform .4s ease, opacity .3s ease;
-
-  &.in {
-    opacity: 1;
-    transform: scale(1);
-  }
+i{
+  z-index: 1;
 }
-
-// White Block BGs
-.block-white-bg {
-  background-color: $white;
-
-  & + & {
-    padding-top: 0 !important;
-  }
-}
-
-//$black: #010100;
