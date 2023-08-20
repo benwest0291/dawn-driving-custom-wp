@@ -91,21 +91,8 @@ span {
   color: #000000 !important;
 }
 
-.to-animate {
-  opacity: 0;
-  transform: scale(0.6);
-  transition: transform 0.4s ease, opacity 0.3s ease;
-}
-.to-animate.in {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.block-white-bg {
-  background-color: #ffffff;
-}
-.block-white-bg + .block-white-bg {
-  padding-top: 0 !important;
+i {
+  z-index: 1;
 }
 
 .navigation__burger {
