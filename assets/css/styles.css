@@ -148,7 +148,7 @@ span {
   border: solid 1px #000000;
   color: #ffffff !important;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1rem;
   cursor: pointer;
   transition: 0.5s ease-in-out;
   text-align: center;
@@ -521,9 +521,15 @@ hr {
 }
 .header__icons {
   color: #ffffff;
-  margin: 12px 5px;
-  font-size: 1rem;
+  margin: 12px 2px;
+  font-size: 0.875rem;
   transition: 0.5s ease-in-out;
+}
+@media (min-width: 768px) {
+  .header__icons {
+    font-size: 1rem;
+    margin: 12px 5px;
+  }
 }
 .header__icons:hover, .header__icons:focus {
   color: #d72232;
@@ -532,7 +538,7 @@ hr {
   color: #ffffff;
   margin: 12px 5px;
   text-decoration: none !important;
-  font-size: 10.5px;
+  font-size: 9.5px;
 }
 @media (min-width: 768px) {
   .header__contact {

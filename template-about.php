@@ -16,7 +16,7 @@ render_banner('about_banner');?>
 
 <section class="about">
     <div class="container">
-        <div class="row">
+        <div class="row mt-md-3 mb-md-3">
             <div class="col-12 col-lg-6">
                 <h6 class="about__subheading mt-4 mb-2"><?php echo $subheading; ?></h6>
                 <?php if($heading == null){ ?>

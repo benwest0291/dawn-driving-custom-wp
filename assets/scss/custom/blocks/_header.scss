@@ -13,9 +13,14 @@
 
   &__icons{
     color: $white;
-    margin: 12px 5px;
-    font-size: $font-size-base;
+    margin: 12px 2px;
+    font-size: $font-size-sm;
     transition: 0.5s ease-in-out;
+
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-base;
+      margin: 12px 5px;
+    }
 
     &:hover, &:focus{
       color: $red;
@@ -26,7 +31,7 @@
     color: $white;
     margin: 12px 5px;
     text-decoration: none !important;
-    font-size: 10.5px;
+    font-size: 9.5px;
 
     @include media-breakpoint-up(md) {
       font-size: $font-size-sm;
