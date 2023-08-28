@@ -1,7 +1,6 @@
 <?php
 get_header();
 $test_centre = get_field('test_location');
-$test_centre_link = '';
 
 render_banner('superstar_banner');?>
     <section class="post">

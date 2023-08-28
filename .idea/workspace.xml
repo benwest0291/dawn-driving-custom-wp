@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/blocks/lower-banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/lower-banner.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single-superstars.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-superstars.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -166,7 +169,9 @@
       <workItem from="1692544466736" duration="212000" />
       <workItem from="1692785281683" duration="53000" />
       <workItem from="1693140926653" duration="239000" />
-      <workItem from="1693171109674" duration="42000" />
+      <workItem from="1693171109674" duration="76000" />
+      <workItem from="1693171273688" duration="7000" />
+      <workItem from="1693234521752" duration="334000" />
     </task>
     <servers />
   </component>
