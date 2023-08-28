@@ -143,12 +143,12 @@ jQuery(function ($) {
 
     google.maps.event.trigger(map, 'resize');
 
-    // // Create marker instance.
+    // Create marker instance.
     var marker = new google.maps.Marker({
     position: latLng,
     map: map,
     title: 'Dawn Driving Tuition',
-    icon: 'https://dawndrivingtuition.co.uk/wp-content/uploads/2023/08/icon.svg'
+    icon: projectUrl.root_url + '/wp-content/uploads/2023/08/icon.svg'
 });
 
 

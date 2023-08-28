@@ -22,6 +22,10 @@ function add_theme_scripts()
     wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/assets/js/custom/custom.js', array('jquery'), '1.3', true);
 
     wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/ff41bfe92a.js', array(), '6.2.0', true);
+
+    wp_localize_script("custom", "projectUrl", array(
+        "root_url" => get_site_url(),
+    ));
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
