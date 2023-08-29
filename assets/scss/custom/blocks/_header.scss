@@ -31,7 +31,8 @@
     color: $white;
     margin: 12px 5px;
     text-decoration: none !important;
-    font-size: 9.5px;
+    font-size: 12px;
+    text-align: center;
 
     @include media-breakpoint-up(md) {
       font-size: $font-size-sm;

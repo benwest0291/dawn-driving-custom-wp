@@ -34,7 +34,7 @@ if (isset($menuLocations['header'])) {
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6">
-                    <div class="d-flex">
+                    <div class="d-flex justify-content-between justify-content-md-start">
                         <div class="d-flex mr-2">
                             <?php if ($phone != null) { ?>
                                 <i class="fa-solid fa-phone mr-1 header__icons"></i>
