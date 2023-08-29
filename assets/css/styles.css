@@ -822,6 +822,19 @@ hr {
     background-position: center;
   }
 }
+.banner__left {
+  background-size: cover;
+  background-position: 40% 80%;
+  padding: 400px 0 80px 0;
+  background-repeat: no-repeat;
+}
+@media (min-width: 768px) {
+  .banner__left {
+    padding: 300px 0 220px 0;
+    background-size: cover;
+    background-position: center;
+  }
+}
 .banner__heading {
   color: #ffffff;
   font-size: 40px;

@@ -2,9 +2,11 @@
 $heading = $data["heading"];
 $bg_image= $data["background_image"];
 $credential = $data['credential'];
+$banner_left = $data['banner_left '];
 ?>
 
-<section class="banner" style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<?php echo ($bg_image != null ? $bg_image['url'] : ''); ?>);" alt="<?php echo $bg_image['alt']; ?>">
+<section class="<?php echo ($banner_left ? 'banner__left' : 'banner'); ?>"
+         style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(<?php echo ($bg_image != null ? $bg_image['url'] : ''); ?>);" alt="<?php echo $bg_image['alt']; ?>">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-8">
