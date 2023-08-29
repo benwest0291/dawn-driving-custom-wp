@@ -2,7 +2,7 @@
 $heading = $data["heading"];
 $bg_image= $data["background_image"];
 $credential = $data['credential'];
-$banner_left = $data['banner_left '];
+$banner_left = $data['banner_left'];
 ?>
 
 <section class="<?php echo ($banner_left ? 'banner__left' : 'banner'); ?>"

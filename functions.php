@@ -157,7 +157,7 @@ function render_banner($prefix = "", $args = array())
         "heading" => get_field($prefix . "_heading"),
         "background_image" => get_field($prefix . "_background_image"),
         "credential" => get_field($prefix . "_credential"),
-        "banner-left" => get_field($prefix . "_banner-left"),
+        "banner_left" => get_field($prefix . "_banner_left"),
     );
 
     $data = array_merge($defaults, $args);
