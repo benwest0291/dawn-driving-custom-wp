@@ -8,7 +8,7 @@ $test_centre_link = '';
     <a title="<?php echo the_title(); ?>" href="<?php echo the_permalink(); ?>">
         <img class="superstar__card__image" src="<?php echo the_post_thumbnail_url("post"); ?>" alt="<?php echo the_title(); ?>"/>
 
-        <? if ($test_centre == 'Sevenoaks Test Centre'){
+        <?php if ($test_centre == 'Sevenoaks Test Centre'){
             $test_centre_link = $sevenoaks_link;
         } else {
             $test_centre_link = $maidstone_link;
