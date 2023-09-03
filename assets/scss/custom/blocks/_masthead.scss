@@ -1,8 +1,7 @@
 .masthead {
   background-size: cover;
   background-position: center;
-  padding: 185px 0;
-  background-attachment: fixed;
+  padding: 160px 0;
 
   @include media-breakpoint-up(md) {
     padding: 190px 0;
@@ -17,7 +16,7 @@
 
   &__heading{
     color: $white;
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 600;
     line-height: $line-height-sm;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);

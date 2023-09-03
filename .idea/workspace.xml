@@ -8,9 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/styles.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_header.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/scss/custom/blocks/_masthead.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/custom/blocks/_masthead.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/partials/superstar-card.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/partials/superstar-card.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +193,8 @@
       <workItem from="1693524523317" duration="51000" />
       <workItem from="1693524587828" duration="17000" />
       <workItem from="1693529075508" duration="28000" />
-      <workItem from="1693765604907" duration="435000" />
+      <workItem from="1693765604907" duration="541000" />
+      <workItem from="1693767245987" duration="442000" />
     </task>
     <servers />
   </component>

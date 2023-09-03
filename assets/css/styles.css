@@ -681,8 +681,7 @@ hr {
 .masthead {
   background-size: cover;
   background-position: center;
-  padding: 185px 0;
-  background-attachment: fixed;
+  padding: 160px 0;
 }
 @media (min-width: 768px) {
   .masthead {
@@ -697,7 +696,7 @@ hr {
 }
 .masthead__heading {
   color: #ffffff;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 1.25;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
