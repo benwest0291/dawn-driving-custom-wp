@@ -61,7 +61,7 @@ $phone = get_theme_mod('contact_telephone');
                         "posts_per_page" => 5,
                         "post_type" => "superstars",
                         "orderby" => "meta_value_num",
-                        "order" => "ASC"
+                        "order" => "DSC"
                     ));
                     while ($superstars->have_posts()) {
                         $superstars->the_post();
@@ -84,7 +84,7 @@ $phone = get_theme_mod('contact_telephone');
                         "posts_per_page" => 5,
                         "post_type" => "post",
                         "orderby" => "meta_value_num",
-                        "order" => "ASC"
+                        "order" => "DSC"
                     ));
                     while ($news->have_posts()) {
                         $news->the_post();
