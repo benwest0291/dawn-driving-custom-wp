@@ -1015,12 +1015,12 @@ a.page-numbers:hover {
   border-radius: 5px;
   -webkit-box-shadow: -2px 11px 23px -18px #010100;
   box-shadow: -2px 11px 23px -18px #010100;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
 }
 @media (min-width: 768px) {
   .post__image {
-    height: 500px;
+    height: 560px;
   }
 }
 .post__avatar img {
