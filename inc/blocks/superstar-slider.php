@@ -32,7 +32,7 @@ $superstars_button_url = get_field('superstars_button_url', 'option');
                     "posts_per_page" => 10,
                     "post_type" => "superstars",
                     "orderby" => "meta_value_num",
-                    "order" => "ASC"
+                    "order" => "DSC"
                 ));
                 while ($superstars->have_posts()) {
                     $superstars->the_post(); ?>
