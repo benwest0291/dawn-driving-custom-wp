@@ -30,18 +30,11 @@ function add_theme_scripts()
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
-
-
-
 /**
  *
  * Load More Superstars
  *
  */
-
- // Add this in your functions.php file
-
-// Add this in your functions.php file
 
 function load_more_superstars_script() { ?>
    <script>
