@@ -20,12 +20,18 @@ function add_theme_scripts()
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js', array('jquery'), '5.2.3', true);
     wp_enqueue_script('slick', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js', array('jquery'), '1.8.1', true);
     wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/assets/js/custom/custom.js', array('jquery'), '1.3', true);
-    wp_enqueue_script('snow', get_stylesheet_directory_uri() . '/assets/js/custom/snow.js', array('jquery'), '1.2', true);
     wp_enqueue_script('font-awesome', 'https://kit.fontawesome.com/ff41bfe92a.js', array(), '6.2.0', true);
 
     wp_localize_script("custom", "projectUrl", array(
         "root_url" => get_site_url(),
     ));
+
+    $snow = get_field('let_it_snow', 'option');
+    
+    if($snow){
+        wp_enqueue_script('snow', get_stylesheet_directory_uri() . '/assets/js/custom/snow.js', array('jquery'), '1.2', true);
+    }
+   
 }
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
@@ -78,7 +84,7 @@ function load_more_superstars() {
     $page = $_POST['page'];
 
     $superstars = new WP_Query(array(
-        "posts_per_page" => 3,
+        "posts_per_page" => 6,
         "post_type" => "superstars",
         "orderby" => "meta_value_num",
         "order" => "DSC",
