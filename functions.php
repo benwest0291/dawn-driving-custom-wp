@@ -30,6 +30,89 @@ function add_theme_scripts()
 
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
+
+
+
+/**
+ *
+ * Load More Superstars
+ *
+ */
+
+ // Add this in your functions.php file
+
+// Add this in your functions.php file
+
+function load_more_superstars_script() { ?>
+   <script>
+        jQuery(document).ready(function ($) {
+            var page = 2;
+
+            $('#js-load-more').on('click', function () {
+                $.ajax({
+                    url: '<?php echo admin_url('admin-ajax.php'); ?>',
+                    type: 'post',
+                    data: {
+                        action: 'load_more_superstars',
+                        page: page,
+                    },
+                    success: function (response) {
+                        var newItems = $(response).hide(); // Hide the new items initially
+                        $('#superstars-container .row').append(newItems);
+
+                        // Trigger the sequential fade-in animation for the newly added items
+                        newItems.each(function (index) {
+                            $(this).delay(index * 200).fadeIn(500);
+                        });
+
+                        page++;
+
+                        // Check if there are more posts
+                        if (response.trim() === '') {
+                            $('#js-load-more').prop('disabled', true).text('Sorry No More Superstars To Load');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+<?php
+}
+
+add_action('wp_footer', 'load_more_superstars_script', 99);
+
+function load_more_superstars() {
+    $page = $_POST['page'];
+
+    $superstars = new WP_Query(array(
+        "posts_per_page" => 3,
+        "post_type" => "superstars",
+        "orderby" => "meta_value_num",
+        "order" => "DSC",
+        "paged" => $page,
+    ));
+
+    ob_start();
+
+    while ($superstars->have_posts()) {
+        $superstars->the_post(); ?>
+         <div class="col-12 col-lg-4 superstar-item fade-in">
+            <?php get_template_part("inc/partials/superstar-card"); ?>
+        </div>
+    <?php }
+
+    wp_reset_postdata();
+    
+    $output = ob_get_clean();
+
+    echo $output;
+    wp_die();
+}
+
+add_action('wp_ajax_load_more_superstars', 'load_more_superstars');
+add_action('wp_ajax_nopriv_load_more_superstars', 'load_more_superstars');
+
+
 /**
  *
  * Site setup
@@ -179,4 +262,6 @@ function my_acf_google_map_api($api)
 
 }
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+
 

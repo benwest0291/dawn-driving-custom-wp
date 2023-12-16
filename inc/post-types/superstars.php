@@ -6,7 +6,7 @@ function dawn_driving_post_types()
         "rewrite" => array("slug" => "superstars"), // Customize the slug as needed
         "has_archive" => false,
         "public" => true,
-        "show_in_rest" => false,
+        "show_in_rest" => true,
         "labels" => array(
             "name" => "SuperStars",
             "add_new_item" => "Add New Super Star",

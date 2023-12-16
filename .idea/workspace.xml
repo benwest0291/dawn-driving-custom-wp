@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ce0faad7-43c0-4abd-83cf-b6c0b9f10fd6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/blocks/superstar-slider.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/blocks/superstar-slider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template-superstars.php" beforeDir="false" afterPath="$PROJECT_DIR$/template-superstars.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +77,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -197,7 +195,9 @@
       <workItem from="1693825833119" duration="148000" />
       <workItem from="1694346545668" duration="192000" />
       <workItem from="1694969369939" duration="837000" />
-      <workItem from="1695650103499" duration="133000" />
+      <workItem from="1695650103499" duration="681000" />
+      <workItem from="1699706661768" duration="1837000" />
+      <workItem from="1700326729085" duration="24000" />
     </task>
     <servers />
   </component>
